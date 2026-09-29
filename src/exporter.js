@@ -44,7 +44,7 @@ function safeName(node, seen) {
  * @param {object} node
  * @param {Map} seen 名称去重表
  */
-function toClashProxy(node, seen) {
+export function toClashProxy(node, seen = new Map()) {
     if (!node || typeof node !== 'object') return null;
 
     const server = node.add || node.server;

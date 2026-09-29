@@ -60,6 +60,22 @@ export default {
         attempts: 2,    // 重试次数
         concurrent: 20, // 并发验证数量
         maxDelay: 3000, // 延迟超过该值视为不可用(ms)
+
+        // ---- 真实可用性探测（mihomo 内核）----
+        // TCP ping 只能筛掉"服务器已下线"，筛不掉"参数失效"。
+        // Cloudflare IP / *.workers.dev 对任何端口都接受 TCP，必然假通过。
+        // 开启 probe 后会拉起 mihomo，走真实代理请求拿延迟。
+        probe: {
+            enabled: true,
+            bin: './bin/mihomo',      // 内核路径（相对项目根）；CI 里由 workflow 下载
+            apiPort: 9090,            // external-controller 端口
+            mixedPort: 7899,          // 混合代理端口（探测本身不用，但内核需要）
+            timeoutMs: 5000,          // 单节点探测超时
+            concurrency: 32,          // 并发探测数
+            testUrl: 'http://www.gstatic.com/generate_204',
+            workDir: '.probe',        // 运行时目录
+            startupTimeoutMs: 60000,  // 内核启动等待上限
+        },
     },
 
     // 输出设置
@@ -75,6 +91,8 @@ export default {
         // 验证失败的节点（新增：用于区分「没抓到」和「抓到了但不通」）
         failedClashFileName: 'clash_failed.yaml',
         failedSubscribeFileName: 'subscribe_failed.txt',
+        // 真实探测通过的节点（由 mihomo 实测，比 clash.yaml 可信）
+        probedClashFileName: 'clash_probed.yaml',
         // 日志目录；留空则自动使用 <dir>/logs
         logDir: '',
     },

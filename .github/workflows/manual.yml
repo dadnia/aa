@@ -6,9 +6,15 @@ on:
     - cron: '0 0,12 * * *'
   workflow_dispatch: # 允许手动触发
 
+# 同一时间只跑一个，避免并发推送冲突
+concurrency:
+  group: update-subscription
+  cancel-in-progress: false
+
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     permissions:
       contents: write  # 必须开启写入权限以提交代码
@@ -20,8 +26,27 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
+
+      # ---------------------------------------------------------------
+      # 下载 mihomo 内核，用于「真实代理探测」
+      #   runner 在墙外，能真正发起代理请求拿延迟——这是本地环境做不到的
+      #   用 fixed-version 而不是 latest，避免上游改接口导致 CI 突然失败
+      # ---------------------------------------------------------------
+      - name: Install mihomo
+        env:
+          MIHOMO_VERSION: v1.19.31
+        run: |
+          set -euo pipefail
+          mkdir -p bin
+          URL="https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/mihomo-linux-amd64-${MIHOMO_VERSION}.gz"
+          echo "Downloading $URL"
+          curl -fsSL --retry 3 --retry-delay 2 -o mihomo.gz "$URL"
+          gunzip -f mihomo.gz
+          mv mihomo bin/mihomo
+          chmod +x bin/mihomo
+          ./bin/mihomo -v
 
       - name: Install dependencies
         run: npm ci
@@ -29,11 +54,28 @@ jobs:
       - name: Run Crawler
         run: npm run crawl
 
+      # 抓取/探测失败时也把日志带出来，否则排查只能靠猜
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-logs-${{ github.run_number }}
+          path: |
+            output/logs/
+            .probe/mihomo.log
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Commit and Push
         run: |
+          set -euo pipefail
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add output/
           # 只有当 output 有变化时才提交
-          git commit -m "chore: update nodes list [skip ci]" || exit 0
+          if git diff --cached --quiet; then
+            echo "No changes in output/, nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore: update nodes list [skip ci]"
           git push

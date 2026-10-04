@@ -22,6 +22,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # 需要完整历史才能安全地 rebase/reset 到 origin/main
+          persist-credentials: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -52,6 +55,11 @@ jobs:
         run: npm ci
 
       - name: Run Crawler
+        env:
+          # 全局测速链接：每个节点都必须通过它完成一次真实代理访问
+          TEST_URL: https://www.gstatic.com/generate_204
+          # 实测延迟超过该值(ms)的节点直接去除
+          MAX_DELAY_MS: '800'
         run: npm run crawl
 
       # 抓取/探测失败时也把日志带出来，否则排查只能靠猜
@@ -71,11 +79,51 @@ jobs:
           set -euo pipefail
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+
           git add output/
+
           # 只有当 output 有变化时才提交
           if git diff --cached --quiet; then
             echo "No changes in output/, nothing to commit."
             exit 0
           fi
+
           git commit -m "chore: update nodes list [skip ci]"
-          git push
+
+          # ---------------------------------------------------------------
+          # 处理 non-fast-forward：
+          #   从 checkout 到 push 之间（几分钟），远端可能被其他提交推进
+          #   （上一轮 Action 尚未结束、或有人在网页上直接改文件）。
+          #   push 默认只允许快进，这种情况会报 "fetch first" 被拒。
+          #
+          #   做法：拉取远端最新，把本地这个提交「移植」到远端之上。
+          #   用 reset --soft 而不是 merge/rebase，是为了：
+          #     - 保留我们刚生成的 output/ 内容（工作区不动）
+          #     - 不产生 merge commit，历史保持线性
+          #     - 不会有 rebase 冲突中断（output/ 是我们独占的，冲突面很小）
+          # ---------------------------------------------------------------
+          for attempt in 1 2 3 4 5; do
+            echo "--- push attempt $attempt ---"
+
+            # 始终基于远端最新提交重建我们的提交
+            git fetch origin main
+            git reset --soft origin/main
+
+            if git diff --cached --quiet; then
+              echo "Remote already contains identical output/, nothing to push."
+              exit 0
+            fi
+
+            git commit -m "chore: update nodes list [skip ci]"
+
+            if git push origin HEAD:main; then
+              echo "Push succeeded on attempt $attempt."
+              exit 0
+            fi
+
+            echo "Push rejected, retrying after remote changes..."
+            sleep $((attempt * 3))
+          done
+
+          echo "::error::Failed to push after 5 attempts."
+          exit 1

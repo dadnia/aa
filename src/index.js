@@ -7,6 +7,7 @@ import { saveResults, exportClash, exportSubscribe, saveRunLog } from './exporte
 import cron from 'node-cron';
 
 const hasProbe = config.validator?.probe?.enabled !== false;
+const TEST_URL = config.testUrl || config.validator?.probe?.testUrl || '';
 
 async function runTask() {
     const startTime = Date.now();
@@ -17,12 +18,15 @@ async function runTask() {
         failedNodes: 0,
         probedNodes: 0,
         probeFailedNodes: 0,
+        tooSlowNodes: 0,
+        testUrl: TEST_URL,
         probeFatal: null,
         errors: [],
         duration: 0
     };
 
     console.log(`\n[${new Date().toISOString()}] Starting task...`);
+    console.log(`[speedtest] every node is measured against ${TEST_URL}`);
     try {
         // ---------- 1. 抓取 ----------
         const raw = await crawlSources();
@@ -75,7 +79,7 @@ async function runTask() {
 
         if (hasProbe) {
             console.log('Layer 2/2: real proxy probe via mihomo...');
-            const { available: probed, failed: probeFailed, fatal } = await probeNodes(tcpAlive);
+            const { available: probed, failed: probeFailed, fatal, tooSlow } = await probeNodes(tcpAlive);
 
             if (fatal) {
                 // 内核起不来 → 不能把节点全丢光，退回 TCP 结果并记录
@@ -85,6 +89,7 @@ async function runTask() {
             } else {
                 stats.probedNodes = probed.length;
                 stats.probeFailedNodes = probeFailed.length;
+                stats.tooSlowNodes = tooSlow || 0;
                 finalNodes = probed;
 
                 // 真实探测通过的单独出一份（比 TCP 版可信）
@@ -112,7 +117,7 @@ async function runTask() {
         console.log(
             `Task completed. raw=${stats.totalLinks} parsed=${stats.validFormatNodes} ` +
             `tcp=${stats.availableNodes} probed=${stats.probedNodes} ` +
-            `probeFailed=${stats.probeFailedNodes}`
+            `probeFailed=${stats.probeFailedNodes} tooSlow=${stats.tooSlowNodes}`
         );
     } catch (error) {
         console.error('Task failed:', error);

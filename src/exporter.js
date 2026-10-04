@@ -144,9 +144,13 @@ export function toClashProxy(node, seen = new Map()) {
 
 /**
  * 组装完整 Clash 配置
+ *   url-test 组的健康检查地址统一取全局测速链接 config.testUrl，
+ *   保证「导出配置里被选中的节点」和「探测时验证过的节点」用的是同一个靶点。
  */
 function buildClashConfig(proxies) {
     const names = proxies.map(p => p.name);
+    const testUrl = config.testUrl || config.validator?.probe?.testUrl
+        || 'https://www.gstatic.com/generate_204';
     return {
         port: 7890,
         'socks-port': 7891,
@@ -160,7 +164,7 @@ function buildClashConfig(proxies) {
                 name: 'Auto Select',
                 type: 'url-test',
                 proxies: names,
-                url: 'http://www.gstatic.com/generate_204',
+                url: testUrl,
                 interval: 300,
                 tolerance: 50
             },
@@ -252,6 +256,13 @@ export async function saveRunLog(stats) {
 === Spider-Clash Run Log ===
 Date: ${new Date().toISOString()}
 Duration: ${stats.duration}ms
+
+[Speed Test]
+Test Url: ${stats.testUrl || config.testUrl || '(unset)'}
+Nodes Probed (real proxy request): ${stats.probedNodes ?? 0}
+Nodes Rejected (unreachable or too slow): ${stats.probeFailedNodes ?? 0}
+  of which too slow: ${stats.tooSlowNodes ?? 0}
+Probe Fatal: ${stats.probeFatal || 'none'}
 
 [Statistics]
 Total Raw Links Found: ${stats.totalLinks}

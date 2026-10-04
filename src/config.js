@@ -1,4 +1,16 @@
+// ============================================================
+// 全局测速链接（唯一真源）
+//   每个节点都必须通过它完成一次真实 HTTP 访问才算「可用」：
+//     - mihomo 内核探测：走代理 GET <testUrl>，拿真实往返延迟
+//     - 导出的 Clash 配置：url-test 组也用它做健康检查
+//   改这一处即全局生效；也可用环境变量 TEST_URL 覆盖（CI 里由 workflow 注入）。
+// ============================================================
+export const TEST_URL = process.env.TEST_URL || 'https://www.gstatic.com/generate_204';
+
 export default {
+    // 测速链接：所有节点访问的靶点
+    testUrl: TEST_URL,
+
     // ============================================================
     // 目标订阅源或网页列表
     //   支持三种形态：
@@ -56,23 +68,26 @@ export default {
 
     // 验证设置
     validator: {
+        // ---- 第 1 层：TCP 粗筛（快速剔掉已下线的，不经过测速链接）----
         timeout: 5000,  // TCP ping 超时(ms)；3000 对海外节点偏短，误杀严重
         attempts: 2,    // 重试次数
         concurrent: 20, // 并发验证数量
-        maxDelay: 3000, // 延迟超过该值视为不可用(ms)
+        maxDelay: 800,  // TCP RTT 超过该值视为不可用(ms)；与测速链接阈值口径一致
 
-        // ---- 真实可用性探测（mihomo 内核）----
+        // ---- 第 2 层：真实可用性探测（mihomo 内核 + 测速链接）----
         // TCP ping 只能筛掉"服务器已下线"，筛不掉"参数失效"。
         // Cloudflare IP / *.workers.dev 对任何端口都接受 TCP，必然假通过。
-        // 开启 probe 后会拉起 mihomo，走真实代理请求拿延迟。
+        // 开启 probe 后会拉起 mihomo，走真实代理请求访问 testUrl 拿延迟，
+        // 延迟高于 maxDelayMs 的节点在这一层被直接剔除。
         probe: {
             enabled: true,
             bin: './bin/mihomo',      // 内核路径（相对项目根）；CI 里由 workflow 下载
             apiPort: 9090,            // external-controller 端口
             mixedPort: 7899,          // 混合代理端口（探测本身不用，但内核需要）
-            timeoutMs: 5000,          // 单节点探测超时
+            timeoutMs: 5000,          // 单节点探测超时；超时即判失败
             concurrency: 32,          // 并发探测数
-            testUrl: 'http://www.gstatic.com/generate_204',
+            testUrl: TEST_URL,        // ← 测速链接（与全局唯一真源一致）
+            maxDelayMs: 800,          // ← 经测速链接实测延迟超过该值直接去除(ms)
             workDir: '.probe',        // 运行时目录
             startupTimeoutMs: 60000,  // 内核启动等待上限
         },

@@ -11,8 +11,14 @@
  * 做法：
  *   1. 把候选节点转成 Clash proxy 对象，写一份最小可用的 mihomo 配置
  *   2. 拉起 mihomo，等 external-controller 就绪
- *   3. 逐个调 GET /proxies/{name}/delay，让内核真正走一次代理请求
- *   4. 回填真实延迟，区分 available / failed
+ *   3. 逐个调 GET /proxies/{name}/delay?url=<测速链接>，
+ *      让内核真正走一次代理请求访问测速链接
+ *   4. 回填真实延迟，区分 available / failed：
+ *        - 请求失败或超时 → failed
+ *        - 实测延迟 > maxDelayMs → 直接剔除（归入 failed 并标记 too_slow）
+ *
+ * 测速链接：https://www.gstatic.com/generate_204
+ *   （config.testUrl 全局唯一真源，可用 TEST_URL 环境变量覆盖）
  *
  * 注意：GitHub Actions runner 的出口 IP 属于 Azure 段，个别机场会屏蔽云厂商
  * IP。这类节点会被判为失败——这是环境特性，不是脚本缺陷。
@@ -31,12 +37,15 @@ const SUPPORTED_TYPES = new Set([
     'http', 'socks5', 'snell', 'wireguard'
 ]);
 
-const DEFAULT_TEST_URL = 'http://www.gstatic.com/generate_204';
+const DEFAULT_TEST_URL = 'https://www.gstatic.com/generate_204';
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 /**
  * 探测配置：可被 config.validator.probe 覆盖
+ *
+ * 测速链接优先级：环境变量 TEST_URL > config.testUrl(全局唯一真源) >
+ * config.validator.probe.testUrl > 内置默认值。
  */
 function probeOptions() {
     const p = config.validator?.probe || {};
@@ -46,7 +55,9 @@ function probeOptions() {
         mixedPort: Number(p.mixedPort || 7899),
         timeoutMs: Number(p.timeoutMs || 5000),
         concurrency: Number(p.concurrency || 32),
-        testUrl: p.testUrl || DEFAULT_TEST_URL,
+        testUrl: process.env.TEST_URL || config.testUrl || p.testUrl || DEFAULT_TEST_URL,
+        // 延迟上限：经测速链接实测超过该值 → 直接剔除
+        maxDelayMs: Number(process.env.MAX_DELAY_MS || p.maxDelayMs || 0),
         workDir: path.join(PROJECT_ROOT, p.workDir || '.probe'),
         startupTimeoutMs: Number(p.startupTimeoutMs || 60000)
     };
@@ -203,7 +214,7 @@ async function testOne(base, name, opts) {
  * 主入口：用 mihomo 真实探测节点可用性
  *
  * @param {object[]} nodes 内部统一格式的节点数组（parseNode 的输出）
- * @returns {Promise<{available:object[], failed:object[], skipped:number}>}
+ * @returns {Promise<{available:object[], failed:object[], skipped:number, tooSlow:number, testUrl:string}>}
  */
 export async function probeNodes(nodes) {
     const opts = probeOptions();
@@ -227,8 +238,13 @@ export async function probeNodes(nodes) {
     }
 
     console.log(`[probe] ${pairs.length} probeable nodes (skipped ${skipped}).`);
+    console.log(`[probe] test url: ${opts.testUrl}`);
 
     // ---- 2. 写配置、起内核 ----
+    // 必须先建目录：startMihomo 里的 mkdir 在写配置之后才执行，
+    // 首次运行（.probe 不存在）会直接 ENOENT。
+    fs.mkdirSync(opts.workDir, { recursive: true });
+
     const cfg = buildMihomoConfig(pairs.map(p => p.proxy), opts);
     fs.writeFileSync(
         path.join(opts.workDir, 'mihomo.yaml'),
@@ -263,19 +279,33 @@ export async function probeNodes(nodes) {
     } catch (e) {
         console.error(`[probe] fatal: ${e.message}`);
         // 内核整体失败 → 全部标记为未验证，交由上层决定是否回退
-        return { available: [], failed: [], skipped, fatal: e.message };
+        return { available: [], failed: [], skipped, fatal: e.message, testUrl: opts.testUrl };
     } finally {
         await stopMihomo(proc);
     }
 
-    // ---- 4. 回填真实延迟 ----
+    // ---- 4. 回填真实延迟，并按测速链接的延迟上限剔除 ----
     const available = [];
     const failed = [];
+    const maxDelayMs = opts.maxDelayMs > 0 ? opts.maxDelayMs : Infinity;
+    let tooSlow = 0;
 
     for (const r of results) {
         r.node.delay = r.delay;
-        r.node.probe = { ok: r.delay > 0, delay: r.delay, error: r.error || null };
-        (r.delay > 0 ? available : failed).push(r.node);
+        const reachable = r.delay > 0;
+        const slow = reachable && r.delay > maxDelayMs;
+        if (slow) tooSlow++;
+
+        r.node.probe = {
+            ok: reachable && !slow,
+            delay: r.delay,
+            testUrl: opts.testUrl,
+            error: reachable
+                ? (slow ? 'too_slow' : null)
+                : (r.error || 'unreachable')
+        };
+
+        (r.node.probe.ok ? available : failed).push(r.node);
     }
 
     // 被跳过的节点（转换失败/协议不支持）算 failed，便于排查
@@ -283,12 +313,15 @@ export async function probeNodes(nodes) {
         if (!pairs.some(p => p.node === node) && !results.some(r => r.node === node)) {
             if (!available.includes(node) && !failed.includes(node)) {
                 node.delay = -1;
-                node.probe = { ok: false, delay: -1, error: 'unsupported_or_invalid' };
+                node.probe = { ok: false, delay: -1, testUrl: opts.testUrl, error: 'unsupported_or_invalid' };
                 failed.push(node);
             }
         }
     }
 
-    console.log(`[probe] done: ${available.length} available, ${failed.length} failed, ${skipped} skipped.`);
-    return { available, failed, skipped };
+    console.log(
+        `[probe] done via ${opts.testUrl}: ${available.length} available, ` +
+        `${failed.length} failed (${tooSlow} too slow > ${maxDelayMs}ms), ${skipped} skipped.`
+    );
+    return { available, failed, skipped, tooSlow, testUrl: opts.testUrl };
 }

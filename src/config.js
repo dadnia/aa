@@ -72,7 +72,7 @@ export default {
         timeout: 5000,  // TCP ping 超时(ms)；3000 对海外节点偏短，误杀严重
         attempts: 2,    // 重试次数
         concurrent: 20, // 并发验证数量
-        maxDelay: 800,  // TCP RTT 超过该值视为不可用(ms)；与测速链接阈值口径一致
+        maxDelay: 350,  // TCP RTT 超过该值视为不可用(ms)；与测速链接阈值口径一致
 
         // ---- 第 2 层：真实可用性探测（mihomo 内核 + 测速链接）----
         // TCP ping 只能筛掉"服务器已下线"，筛不掉"参数失效"。
@@ -87,7 +87,7 @@ export default {
             timeoutMs: 5000,          // 单节点探测超时；超时即判失败
             concurrency: 32,          // 并发探测数
             testUrl: TEST_URL,        // ← 测速链接（与全局唯一真源一致）
-            maxDelayMs: 800,          // ← 经测速链接实测延迟超过该值直接去除(ms)
+            maxDelayMs: 350,          // ← 经测速链接实测延迟超过该值直接去除(ms)
             workDir: '.probe',        // 运行时目录
             startupTimeoutMs: 60000,  // 内核启动等待上限
         },

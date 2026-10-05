@@ -59,7 +59,7 @@ jobs:
           # 全局测速链接：每个节点都必须通过它完成一次真实代理访问
           TEST_URL: https://www.gstatic.com/generate_204
           # 实测延迟超过该值(ms)的节点直接去除
-          MAX_DELAY_MS: '800'
+          MAX_DELAY_MS: '350'
         run: npm run crawl
 
       # 抓取/探测失败时也把日志带出来，否则排查只能靠猜

@@ -5,28 +5,14 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - name: 未知 SS-73 | free-nodes - 329ms
-    server: 132.243.175.144
-    port: 8388
+  - name: 未知 SS-85 | free-nodes - 143ms
+    server: 64.74.163.69
+    port: 18766
     udp: true
     type: ss
-    cipher: chacha20-ietf-poly1305
-    password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  - name: 未知 SS-74 | free-nodes - 321ms
-    server: 82.38.31.159
-    port: 443
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-  - name: 未知 SS-75 | free-nodes - 321ms
-    server: 82.38.31.42
-    port: 8080
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-  - name: 未知 TROJAN-104 | free-nodes - 255ms
+    cipher: aes-128-gcm
+    password: 4efe1af272e7292139b889f6a63ee071
+  - name: 未知 TROJAN-109 | free-nodes - 180ms
     server: 34.94.125.227
     port: 443
     udp: true
@@ -35,40 +21,38 @@ proxies:
     sni: mxlo.wsone.icu
     network: tcp
     skip-cert-verify: true
-  - name: 未知 VMESS-321 | free-nodes - 324ms
-    server: 31.76.11.83
-    port: 55969
+  - name: 未知 TROJAN-117 | free-nodes - 248ms
+    server: alert-titmouse.rooster465.autos
+    port: 443
     udp: true
-    type: vmess
-    uuid: 049a57b9-4913-4f9f-9cda-a861989ee59d
-    alterId: 0
-    cipher: auto
+    type: trojan
+    password: UX82473651
+    sni: alert-titmouse.rooster465.autos
+    network: tcp
+    skip-cert-verify: true
+  - name: 未知 VLESS-177 | free-nodes - 155ms
+    server: 104.243.33.154
+    port: 45299
+    udp: true
+    type: vless
+    uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
     tls: false
+    servername: 104.243.33.154
     network: tcp
+    flow: ""
     skip-cert-verify: true
-  - name: US VLESS-502 | free-nodes - 235ms
-    server: s2317.kukuss.top
-    port: 443
+  - name: US VLESS-556 | free-nodes - 281ms
+    server: s482.wagahaha.xyz
+    port: 10829
     udp: true
     type: vless
     uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
     tls: true
-    servername: u695098uf24555c7s2316.gogocs.xyz
+    servername: u695098u764943ccs478.gogocs.xyz
     network: tcp
     flow: xtls-rprx-vision
     skip-cert-verify: true
-  - name: US VLESS-514 | free-nodes - 325ms
-    server: s2318.okgg.top
-    port: 443
-    udp: true
-    type: vless
-    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-    tls: true
-    servername: u695098uf24555c7s2316.gogocs.xyz
-    network: tcp
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-  - name: US VLESS-547 | free-nodes - 303ms
+  - name: US VLESS-561 | free-nodes - 201ms
     server: 185.106.96.231
     port: 10829
     udp: true
@@ -79,194 +63,96 @@ proxies:
     network: tcp
     flow: xtls-rprx-vision
     skip-cert-verify: true
-  - name: 未知 SS-75 | free-nodes - 311ms
-    server: 82.38.31.170
+  - name: US VLESS-562 | free-nodes - 177ms
+    server: 198.12.124.74
+    port: 10829
+    udp: true
+    type: vless
+    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+    tls: true
+    servername: u695098u5e20ed1cs709.gogocs.xyz
+    network: tcp
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+  - name: US VLESS-572 | free-nodes - 263ms
+    server: 192.227.169.125
+    port: 10829
+    udp: true
+    type: vless
+    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+    tls: true
+    servername: u695098u764943ccs478.gogocs.xyz
+    network: tcp
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+  - name: 未知 TROJAN-147 | free-nodes - 255ms
+    server: pro-mako.rooster465.autos
     port: 443
     udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-  - name: United+States - 34ms
-    server: 37.19.198.243
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: United+Kingdom - 318ms
-    server: 82.38.31.180
-    port: 8080
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-  - name: United+Kingdom - 319ms
-    server: 82.38.31.184
-    port: 8080
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-  - name: United+Kingdom - 316ms
-    server: 82.38.31.207
-    port: 8080
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-  - name: United+States - 183ms
-    server: 108.181.0.177
-    port: 8388
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: G5p6ww4o67HB
-  - name: United+States - 114ms
+    type: trojan
+    password: UX82473651
+    sni: pro-mako.rooster465.autos
+    network: tcp
+    skip-cert-verify: true
+  - name: United+States - 50ms
     server: 156.146.38.168
     port: 443
     udp: true
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: Reino+Unido - 320ms
-    server: 82.38.31.203
-    port: 8080
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-  - name: Reino+Unido - 300ms
-    server: 82.38.31.155
-    port: 8080
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-  - name: Reino+Unido - 327ms
-    server: 82.38.31.214
-    port: 8080
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-  - name: Reino+Unido - 306ms
-    server: 82.38.31.36
-    port: 8080
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-  - name: 未知 SS-18 | free-nodes - 313ms
-    server: 82.38.31.149
-    port: 8080
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-  - name: United+Kingdom - 314ms
-    server: 82.38.31.181
-    port: 8080
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-  - name: Germany - 313ms
-    server: 8.209.74.72
-    port: 20001
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: PWpjPo3tqhPN4yRZ
-  - name: Royaume-Uni - 318ms
-    server: 82.38.31.162
+  - name: EUA - 49ms
+    server: 156.146.38.167
     port: 443
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-  - name: アメリカ - 183ms
-    server: 108.181.118.10
-    port: 8388
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: G5p6ww4o67HB
-  - name: 🇮🇹[www.v2nodes.com] vless-IT-1... - 341ms
-    server: 204.216.216.23
-    port: 10086
-    udp: true
-    type: vless
-    uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-    tls: false
-    servername: 204.216.216.23
-    network: tcp
-    flow: ""
-    skip-cert-verify: true
-  - name: 🇨🇦[www.v2nodes.com] ss-CA-1584... - 78ms
-    server: 64.74.161.147
-    port: 17200
     udp: true
     type: ss
     cipher: aes-128-gcm
-    password: 1cbb3e347ee86e1980a7c731e9dd00a0
-  - name: 🇬🇧[www.v2nodes.com] ss-GB-1292... - 260ms
-    server: 149.102.132.184
-    port: 443
+    password: shadowsocks
+  - name: EUA - 191ms
+    server: 169.197.142.22
+    port: 18000
     udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: g5h5jleTRSyO3Rk4
-  - name: 🇬🇧[www.v2nodes.com] ss-GB-1289... - 264ms
-    server: 149.102.149.207
-    port: 80
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: LXchLsIwtCeUAUgu
-  - name: 🇳🇱[www.v2nodes.com] ss-NL-1592... - 350ms
-    server: 82.38.31.171
-    port: 8080
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-  - name: The Netherlands [TG] - 314ms
-    server: 193.29.139.197
-    port: 8080
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-  - name: France [TG] - 295ms
-    server: 51.77.225.200
-    port: 8388
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: zRZNBszYyWo5
-  - name: "🇫🇷 法国 | FRA #3 - 264ms"
-    server: 51.44.86.16
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-  - name: 🇬🇧[www.v2nodes.com] ss-GB-1292... - 294ms
+    type: vmess
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: raw
+    skip-cert-verify: true
+  - name: Британия - 339ms
     server: 149.102.132.184
     port: 80
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: g5h5jleTRSyO3Rk4
-  - name: 🇬🇧[www.v2nodes.com] ss-GB-1289... - 340ms
-    server: 149.102.149.207
+  - name: США - 100ms
+    server: 37.19.198.243
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: United States - 153ms
+    server: 67.220.85.46
+    port: 18000
+    udp: true
+    type: vmess
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 英国 - 328ms
+    server: 149.102.132.184
     port: 443
     udp: true
     type: ss
     cipher: aes-256-gcm
-    password: LXchLsIwtCeUAUgu
-  - name: 🇸🇬[www.v2nodes.com] vless-SG - 40ms
-    server: 172.67.76.40
+    password: g5h5jleTRSyO3Rk4
+  - name: The Netherlands [TG] - 118ms
+    server: 188.164.248.216
     port: 443
     udp: true
     type: vless
@@ -277,64 +163,126 @@ proxies:
     flow: ""
     skip-cert-verify: true
     ws-opts:
-      path: /fp=chromesecurity=tls
+      path: /
       headers:
         Host: ccc.010304.xyz
-  - name: "🇩🇪 德国 | DEU #6 - 295ms"
-    server: 18.184.136.175
+  - name: The Netherlands/Amsterdam [GH:Mahdi0024/Pro] - 346ms
+    server: 158.173.20.171
     port: 443
     udp: true
     type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-  - name: "🇺🇸 美国 | USA #3 - 13ms"
-    server: 54.221.120.243
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: "🇸🇬[www.v2nodes.com] vless-SG #4 - 93ms"
+    server: 172.64.150.28
+    port: 2082
+    udp: true
+    type: vless
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    tls: false
+    servername: 172.64.150.28
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /fp
+      headers:
+        Host: hhlfy.twiladaphne.ndjp.net
+  - name: "🇭🇰[www.v2nodes.com] vless-HK-1... #1 - 120ms"
+    server: 188.114.97.6
+    port: 443
+    udp: true
+    type: vless
+    uuid: e6df2095-a73c-4043-8693-8d5a03686870
+    tls: true
+    servername: lucasjow.us.ci
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+      headers:
+        Host: lucasjow.us.ci
+  - name: 🇨🇦[www.v2nodes.com] ss-CA-1557... - 262ms
+    server: 51.222.136.236
+    port: 8882
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+  - name: 🇬🇧[www.v2nodes.com] ss-GB-1289... - 321ms
+    server: 149.102.149.207
+    port: 80
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: LXchLsIwtCeUAUgu
+  - name: 🇸🇬[www.v2nodes.com] vless-SG - 100ms
+    server: 104.26.4.2
+    port: 443
+    udp: true
+    type: vless
+    uuid: d342d11e-d224-4463-b982-532309285094
+    tls: true
+    servername: ccc.010304.xyz
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: ccc.010304.xyz
+  - name: 🇬🇧[www.v2nodes.com] ss-GB-1289... - 349ms
+    server: 149.102.149.207
     port: 443
     udp: true
     type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
+    cipher: aes-256-gcm
+    password: LXchLsIwtCeUAUgu
+  - name: 🇸🇬[www.v2nodes.com] vless-SG - 135ms
+    server: cf.877774.xyz
+    port: 443
+    udp: true
+    type: vless
+    uuid: d342d11e-d224-4463-b982-532309285094
+    tls: true
+    servername: ccc.010304.xyz
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: ccc.010304.xyz
 proxy-groups:
   - name: Auto Select
     type: url-test
     proxies:
-      - 未知 SS-73 | free-nodes - 329ms
-      - 未知 SS-74 | free-nodes - 321ms
-      - 未知 SS-75 | free-nodes - 321ms
-      - 未知 TROJAN-104 | free-nodes - 255ms
-      - 未知 VMESS-321 | free-nodes - 324ms
-      - US VLESS-502 | free-nodes - 235ms
-      - US VLESS-514 | free-nodes - 325ms
-      - US VLESS-547 | free-nodes - 303ms
-      - 未知 SS-75 | free-nodes - 311ms
-      - United+States - 34ms
-      - United+Kingdom - 318ms
-      - United+Kingdom - 319ms
-      - United+Kingdom - 316ms
-      - United+States - 183ms
-      - United+States - 114ms
-      - Reino+Unido - 320ms
-      - Reino+Unido - 300ms
-      - Reino+Unido - 327ms
-      - Reino+Unido - 306ms
-      - 未知 SS-18 | free-nodes - 313ms
-      - United+Kingdom - 314ms
-      - Germany - 313ms
-      - Royaume-Uni - 318ms
-      - アメリカ - 183ms
-      - 🇮🇹[www.v2nodes.com] vless-IT-1... - 341ms
-      - 🇨🇦[www.v2nodes.com] ss-CA-1584... - 78ms
-      - 🇬🇧[www.v2nodes.com] ss-GB-1292... - 260ms
-      - 🇬🇧[www.v2nodes.com] ss-GB-1289... - 264ms
-      - 🇳🇱[www.v2nodes.com] ss-NL-1592... - 350ms
-      - The Netherlands [TG] - 314ms
-      - France [TG] - 295ms
-      - "🇫🇷 法国 | FRA #3 - 264ms"
-      - 🇬🇧[www.v2nodes.com] ss-GB-1292... - 294ms
-      - 🇬🇧[www.v2nodes.com] ss-GB-1289... - 340ms
-      - 🇸🇬[www.v2nodes.com] vless-SG - 40ms
-      - "🇩🇪 德国 | DEU #6 - 295ms"
-      - "🇺🇸 美国 | USA #3 - 13ms"
+      - 未知 SS-85 | free-nodes - 143ms
+      - 未知 TROJAN-109 | free-nodes - 180ms
+      - 未知 TROJAN-117 | free-nodes - 248ms
+      - 未知 VLESS-177 | free-nodes - 155ms
+      - US VLESS-556 | free-nodes - 281ms
+      - US VLESS-561 | free-nodes - 201ms
+      - US VLESS-562 | free-nodes - 177ms
+      - US VLESS-572 | free-nodes - 263ms
+      - 未知 TROJAN-147 | free-nodes - 255ms
+      - United+States - 50ms
+      - EUA - 49ms
+      - EUA - 191ms
+      - Британия - 339ms
+      - США - 100ms
+      - United States - 153ms
+      - 英国 - 328ms
+      - The Netherlands [TG] - 118ms
+      - The Netherlands/Amsterdam [GH:Mahdi0024/Pro] - 346ms
+      - "🇸🇬[www.v2nodes.com] vless-SG #4 - 93ms"
+      - "🇭🇰[www.v2nodes.com] vless-HK-1... #1 - 120ms"
+      - 🇨🇦[www.v2nodes.com] ss-CA-1557... - 262ms
+      - 🇬🇧[www.v2nodes.com] ss-GB-1289... - 321ms
+      - 🇸🇬[www.v2nodes.com] vless-SG - 100ms
+      - 🇬🇧[www.v2nodes.com] ss-GB-1289... - 349ms
+      - 🇸🇬[www.v2nodes.com] vless-SG - 135ms
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -342,42 +290,30 @@ proxy-groups:
     type: select
     proxies:
       - Auto Select
-      - 未知 SS-73 | free-nodes - 329ms
-      - 未知 SS-74 | free-nodes - 321ms
-      - 未知 SS-75 | free-nodes - 321ms
-      - 未知 TROJAN-104 | free-nodes - 255ms
-      - 未知 VMESS-321 | free-nodes - 324ms
-      - US VLESS-502 | free-nodes - 235ms
-      - US VLESS-514 | free-nodes - 325ms
-      - US VLESS-547 | free-nodes - 303ms
-      - 未知 SS-75 | free-nodes - 311ms
-      - United+States - 34ms
-      - United+Kingdom - 318ms
-      - United+Kingdom - 319ms
-      - United+Kingdom - 316ms
-      - United+States - 183ms
-      - United+States - 114ms
-      - Reino+Unido - 320ms
-      - Reino+Unido - 300ms
-      - Reino+Unido - 327ms
-      - Reino+Unido - 306ms
-      - 未知 SS-18 | free-nodes - 313ms
-      - United+Kingdom - 314ms
-      - Germany - 313ms
-      - Royaume-Uni - 318ms
-      - アメリカ - 183ms
-      - 🇮🇹[www.v2nodes.com] vless-IT-1... - 341ms
-      - 🇨🇦[www.v2nodes.com] ss-CA-1584... - 78ms
-      - 🇬🇧[www.v2nodes.com] ss-GB-1292... - 260ms
-      - 🇬🇧[www.v2nodes.com] ss-GB-1289... - 264ms
-      - 🇳🇱[www.v2nodes.com] ss-NL-1592... - 350ms
-      - The Netherlands [TG] - 314ms
-      - France [TG] - 295ms
-      - "🇫🇷 法国 | FRA #3 - 264ms"
-      - 🇬🇧[www.v2nodes.com] ss-GB-1292... - 294ms
-      - 🇬🇧[www.v2nodes.com] ss-GB-1289... - 340ms
-      - 🇸🇬[www.v2nodes.com] vless-SG - 40ms
-      - "🇩🇪 德国 | DEU #6 - 295ms"
-      - "🇺🇸 美国 | USA #3 - 13ms"
+      - 未知 SS-85 | free-nodes - 143ms
+      - 未知 TROJAN-109 | free-nodes - 180ms
+      - 未知 TROJAN-117 | free-nodes - 248ms
+      - 未知 VLESS-177 | free-nodes - 155ms
+      - US VLESS-556 | free-nodes - 281ms
+      - US VLESS-561 | free-nodes - 201ms
+      - US VLESS-562 | free-nodes - 177ms
+      - US VLESS-572 | free-nodes - 263ms
+      - 未知 TROJAN-147 | free-nodes - 255ms
+      - United+States - 50ms
+      - EUA - 49ms
+      - EUA - 191ms
+      - Британия - 339ms
+      - США - 100ms
+      - United States - 153ms
+      - 英国 - 328ms
+      - The Netherlands [TG] - 118ms
+      - The Netherlands/Amsterdam [GH:Mahdi0024/Pro] - 346ms
+      - "🇸🇬[www.v2nodes.com] vless-SG #4 - 93ms"
+      - "🇭🇰[www.v2nodes.com] vless-HK-1... #1 - 120ms"
+      - 🇨🇦[www.v2nodes.com] ss-CA-1557... - 262ms
+      - 🇬🇧[www.v2nodes.com] ss-GB-1289... - 321ms
+      - 🇸🇬[www.v2nodes.com] vless-SG - 100ms
+      - 🇬🇧[www.v2nodes.com] ss-GB-1289... - 349ms
+      - 🇸🇬[www.v2nodes.com] vless-SG - 135ms
 rules:
   - MATCH,Proxy

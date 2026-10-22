@@ -5,27 +5,7 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - name: 未知 TROJAN-138 | free-nodes - 50ms
-    server: 34.94.125.227
-    port: 443
-    udp: true
-    type: trojan
-    password: M7v%w11Se*
-    sni: mxlo.wsone.icu
-    network: tcp
-    skip-cert-verify: true
-  - name: 🇺🇸_美国_26 - 42ms
-    server: 169.197.142.22
-    port: 18000
-    udp: true
-    type: vmess
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    skip-cert-verify: true
-  - name: 🇺🇸_美国_31 - 120ms
+  - name: 🇺🇸_美国_31 - 149ms
     server: blog.findlocaljobnetworkandbuildcommunityconnections.com
     port: 443
     udp: true
@@ -34,7 +14,7 @@ proxies:
     sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
     network: tcp
     skip-cert-verify: true
-  - name: 🇺🇸_美国_35 - 105ms
+  - name: 🇺🇸_美国_35 - 158ms
     server: resources.findlocaljobnetworkandbuildcommunityconnections.com
     port: 443
     udp: true
@@ -43,7 +23,7 @@ proxies:
     sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
     network: tcp
     skip-cert-verify: true
-  - name: 🇺🇸_美国_39 - 73ms
+  - name: 🇺🇸_美国_39 - 71ms
     server: 84.17.41.2
     port: 18000
     udp: true
@@ -54,7 +34,18 @@ proxies:
     tls: false
     network: tcp
     skip-cert-verify: true
-  - name: 🇺🇸_美国_45 - 221ms
+  - name: 🇺🇸_美国_44 - 221ms
+    server: 38.110.1.246
+    port: 18000
+    udp: true
+    type: vmess
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国_45 - 246ms
     server: 45.138.100.248
     port: 10443
     udp: true
@@ -65,7 +56,18 @@ proxies:
     network: tcp
     flow: ""
     skip-cert-verify: true
-  - name: 🇨🇦_加拿大_47 - 254ms
+  - name: 🇨🇦_加拿大_46 - 246ms
+    server: 134.195.196.211
+    port: 18000
+    udp: true
+    type: vmess
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇨🇦_加拿大_47 - 204ms
     server: 23.162.200.198
     port: 18000
     udp: true
@@ -76,7 +78,7 @@ proxies:
     tls: false
     network: tcp
     skip-cert-verify: true
-  - name: 🇺🇸_美国_50 - 215ms
+  - name: 🇺🇸_美国_50 - 263ms
     server: 38.91.107.49
     port: 18000
     udp: true
@@ -87,7 +89,59 @@ proxies:
     tls: false
     network: tcp
     skip-cert-verify: true
-  - name: 🏳️_未知_247 - 66ms
+  - name: 🇺🇸_美国_51 - 198ms
+    server: 67.220.95.3
+    port: 18000
+    udp: true
+    type: vmess
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国_119 - 65ms
+    server: 129.146.143.80
+    port: 48111
+    udp: true
+    type: vmess
+    uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇨🇦_加拿大_215 - 209ms
+    server: 23.227.39.30
+    port: 8880
+    udp: true
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: 23.227.39.30
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime17.workers.dev
+  - name: 🇺🇸_美国_238 - 134ms
+    server: 63.141.128.30
+    port: 8880
+    udp: true
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: 63.141.128.30
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime42.workers.dev
+  - name: 🏳️_未知_247 - 70ms
     server: 172.67.155.65
     port: 8443
     udp: true
@@ -102,7 +156,67 @@ proxies:
       path: /cart/docs/www/proxyip
       headers:
         Host: lucasjow.us.ci
-  - name: 🏳️_未知_367 - 201ms
+  - name: 🇸🇮_斯洛文尼亚_268 - 122ms
+    server: 92.53.189.40
+    port: 8880
+    udp: true
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: 92.53.189.40
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime19.workers.dev
+  - name: 🇺🇸_美国_269 - 135ms
+    server: 80.93.202.40
+    port: 8880
+    udp: true
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: 80.93.202.40
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime02.workers.dev
+  - name: 🇷🇺_俄罗斯_276 - 126ms
+    server: 185.148.104.30
+    port: 8880
+    udp: true
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: 185.148.104.30
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime51.workers.dev
+  - name: 🏳️_未知_333 - 346ms
+    server: e33xr.qzz.io
+    port: 80
+    udp: true
+    type: vless
+    uuid: e081da45-9fae-4687-9376-f9a6a0dbbe83
+    tls: false
+    servername: e33xr.qzz.io
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /id-amz
+      headers:
+        Host: e33xr.qzz.io
+  - name: 🏳️_未知_367 - 215ms
     server: cf-socks.caoyuwu.eu.org
     port: 443
     udp: true
@@ -117,7 +231,22 @@ proxies:
       path: /
       headers:
         Host: cf-socks.caoyuwu.eu.org
-  - name: 🏳️_未知_392 - 132ms
+  - name: 🏳️_未知_373 - 195ms
+    server: cf-vless-4cf55824.aimall.fr
+    port: 443
+    udp: true
+    type: vless
+    uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
+    tls: true
+    servername: cf-vless-4cf55824.aimall.fr
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /connect
+      headers:
+        Host: cf-vless-4cf55824.aimall.fr
+  - name: 🏳️_未知_392 - 220ms
     server: us16-4.998998.best
     port: 443
     udp: true
@@ -132,7 +261,7 @@ proxies:
       path: /efrsdioy98wert
       headers:
         Host: server1.9966338.xyz
-  - name: 🇺🇸_美国_393 - 305ms
+  - name: 🇺🇸_美国_393 - 86ms
     server: 129.146.77.248
     port: 39495
     udp: true
@@ -147,7 +276,112 @@ proxies:
       path: /cctv13.m3u8
       headers:
         Host: 129.146.77.248
-  - name: 🇺🇸_美国_409 - 285ms
+  - name: 🏳️_未知_397 - 263ms
+    server: 104.17.136.198
+    port: 443
+    udp: true
+    type: vmess
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /ws
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: 🏳️_未知_398 - 207ms
+    server: 172.66.203.67
+    port: 443
+    udp: true
+    type: vmess
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: 🏳️_未知_400 - 186ms
+    server: 104.21.7.133
+    port: 80
+    udp: true
+    type: vmess
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: 🏳️_未知_401 - 270ms
+    server: 172.67.187.145
+    port: 80
+    udp: true
+    type: vmess
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /ws
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: 🏳️_未知_402 - 251ms
+    server: cf.090227.xyz
+    port: 443
+    udp: true
+    type: vmess
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /ws
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: 🏳️_未知_405 - 194ms
+    server: 104.17.147.222
+    port: 80
+    udp: true
+    type: vmess
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: 🏳️_未知_406 - 274ms
+    server: 172.64.229.21
+    port: 443
+    udp: true
+    type: vmess
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /ws
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: 🇺🇸_美国_409 - 305ms
     server: 45.138.100.248
     port: 14430
     udp: true
@@ -162,7 +396,7 @@ proxies:
       path: /vless
       headers:
         Host: 45.138.100.248
-  - name: 🇺🇸_美国_410 - 293ms
+  - name: 🇺🇸_美国_410 - 283ms
     server: 69.48.201.136
     port: 30016
     udp: true
@@ -177,57 +411,80 @@ proxies:
       path: /usserver
       headers:
         Host: 69.48.201.136
-  - name: 🏳️_未知_500 - 81ms
-    server: ccc.010304.xyz
-    port: 443
+  - name: France - 77ms
+    server: 173.245.49.30
+    port: 8880
     udp: true
     type: vless
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    servername: ccc.010304.xyz
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: vms.lifetime36.workers.dev
     network: ws
     flow: ""
     skip-cert-verify: true
     ws-opts:
       path: /
       headers:
-        Host: ccc.010304.xyz
-  - name: USA - 129ms
-    server: 156.146.38.168
+        Host: vms.lifetime36.workers.dev
+  - name: Malaysia - 92ms
+    server: 8.39.125.213
+    port: 443
+    udp: true
+    type: vless
+    uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+    tls: true
+    servername: whitecreeper.pages.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /proxyip=ProxyIP.SG.CMLiussss.Net
+      headers:
+        Host: whitecreeper.pages.dev
+  - name: United+States - 325ms
+    server: 149.22.87.240
     port: 443
     udp: true
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: EUA - 138ms
-    server: 156.146.38.170
+  - name: États+Unis - 325ms
+    server: 149.22.87.204
     port: 443
     udp: true
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: United+States - 101ms
+  - name: アメリカ - 79ms
+    server: fans.liverpool.qzz.io
+    port: 2083
+    udp: true
+    type: vless
+    uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+    tls: true
+    servername: FANs.LIVeRPOol.QZz.IO
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+      headers:
+        Host: fans.liverpool.qzz.io
+  - name: United+States - 108ms
     server: 173.244.56.6
     port: 443
     udp: true
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: United+States - 204ms
-    server: 37.19.198.243
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: États+Unis - 276ms
-    server: 15.204.246.132
-    port: 7307
+  - name: United+States - 275ms
+    server: 15.204.247.124
+    port: 2375
     udp: true
     type: ss
     cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: "🇳🇱 荷兰 | NLD #2 - 69ms"
+    password: faBAoD54k87UJG7
+  - name: "🏳[www.v2nodes.com] vless- #4 - 77ms"
     server: 188.164.248.216
     port: 443
     udp: true
@@ -242,44 +499,94 @@ proxies:
       path: /
       headers:
         Host: ccc.010304.xyz
-  - name: 🇨🇦[www.v2nodes.com] ss-CA-1557... - 264ms
+  - name: "🏳[www.v2nodes.com] vless- #16 - 163ms"
+    server: kclx.eu.org
+    port: 443
+    udp: true
+    type: vless
+    uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+    tls: true
+    servername: kclx.eu.org
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /154.16.10.34-8080
+      headers:
+        Host: kclx.eu.org
+  - name: 🇨🇦[www.v2nodes.com] ss-CA-1559... - 295ms
+    server: 51.222.141.125
+    port: 445
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+  - name: "🇨🇦[www.v2nodes.com] ss-CA-1559... #1 - 346ms"
+    server: 51.79.85.185
+    port: 8118
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
+  - name: 🇨🇦[www.v2nodes.com] ss-CA-1557... - 259ms
     server: 51.222.136.236
     port: 8882
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: kDWvXYZoTBcGkC4
-  - name: 🇺🇸[www.v2nodes.com] ss-US-1602... - 214ms
+  - name: 🇨🇦[www.v2nodes.com] ss-CA-1545... - 316ms
+    server: 51.79.64.198
+    port: 8119
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
+  - name: 🇯🇵[www.v2nodes.com] ss-JP-1598... - 327ms
+    server: 191.223.221.53
+    port: 8388
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv
+  - name: 🇺🇸[www.v2nodes.com] ss-US-1602... - 72ms
+    server: 95.215.201.18
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1602... #1 - 209ms"
     server: 193.151.163.18
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1602... #1 - 239ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1602... #2 - 215ms"
     server: 45.86.51.18
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1602... #2 - 232ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1602... #3 - 271ms"
     server: 193.151.160.18
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1602... #3 - 175ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1602... #4 - 179ms"
     server: 185.215.132.9
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸 美国 | USA #4 - 80ms"
+  - name: "🇸🇬 新加坡 | SGP #2 - 137ms"
     server: 104.18.35.86
-    port: 2082
+    port: 8080
     udp: true
     type: vless
     uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
@@ -289,81 +596,126 @@ proxies:
     flow: ""
     skip-cert-verify: true
     ws-opts:
-      path: /fp
+      path: /sg-melbi
       headers:
         Host: hhlfy.twiladaphne.ndjp.net
-  - name: "🇺🇸 美国 | USA #9 - 110ms"
-    server: 54.191.98.142
+  - name: "🇺🇸 美国 | USA #1 - 241ms"
+    server: 3.15.220.122
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: "🇺🇸 美国 | USA #6 - 81ms"
+    server: 172.67.152.148
     port: 443
     udp: true
     type: vless
-    uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-    tls: false
-    servername: 54.191.98.142
-    network: http
+    uuid: 9cdcbaf0-d244-4f37-b227-90166e43f5b5
+    tls: true
+    servername: cf-socks.caoyuwu.eu.org
+    network: ws
     flow: ""
     skip-cert-verify: true
-  - name: United States/San Jose [GH:Mahdi0024/Pro] - 26ms
+    ws-opts:
+      path: /
+      headers:
+        Host: cf-socks.caoyuwu.eu.org
+  - name: "United States/San Francisco [TG] #3 - 186ms"
+    server: 172.67.130.187
+    port: 2083
+    udp: true
+    type: vless
+    uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+    tls: true
+    servername: fans.liverpool.qzz.io
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+      headers:
+        Host: fans.liverpool.qzz.io
+  - name: Singapore [TG] - 85ms
+    server: 27.50.49.154
+    port: 2083
+    udp: true
+    type: vless
+    uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+    tls: true
+    servername: proxy-34l.pages.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: proxy-34l.pages.dev
+  - name: United States/San Jose [GH:Mahdi0024/Pro] - 29ms
     server: 107.155.57.11
     port: 8080
     udp: true
     type: ss
     cipher: rc4-md5
     password: 14fFPrbezE3HDZzsMOr6
-  - name: United States/Atlanta [GH:barry-far/V2r] - 173ms
+  - name: United States/Atlanta [GH:barry-far/V2r] - 176ms
     server: 185.215.132.18
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: United States/Washington [GH:barry-far/V2r] - 232ms
+  - name: United States/Washington [GH:barry-far/V2r] - 198ms
     server: 185.230.230.18
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸 United States/New York [TG] - 227ms
-    server: 37.19.198.160
+  - name: "🏳[www.v2nodes.com] vless- #51 - 58ms"
+    server: 104.18.40.100
     port: 443
     udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🍎98@oneclickvpnkeys - 289ms
-    server: 129.213.91.185
-    port: 35013
-    udp: true
-    type: hysteria2
-    password: 4291c983-c520-46ac-82cc-48f14bef573f
-    sni: 129.213.91.185
-    skip-cert-verify: true
-  - name: "🇸🇬[www.v2nodes.com] vless-SG-1... #7 - 95ms"
-    server: 104.18.35.86
-    port: 2083
-    udp: true
     type: vless
-    uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+    uuid: d342d11e-d224-4463-b982-532309285094
     tls: true
-    servername: vlsovip.1d.mom
+    servername: ccc.010304.xyz
     network: ws
     flow: ""
     skip-cert-verify: true
     ws-opts:
-      path: /fp=unsafefp=chrome
+      path: /fp=chromesecurity=tls
       headers:
-        Host: vlsovip.1d.mom
-  - name: "🇺🇸[www.v2nodes.com] trojan-US-... #3 - 169ms"
-    server: 66.23.203.21
-    port: 59689
+        Host: ccc.010304.xyz
+  - name: 🇺🇸 美国 | USA - 110ms
+    server: 104.21.82.155
+    port: 443
     udp: true
     type: trojan
-    password: ae7eb4dwyaz25pxwgq59
-    sni: 66.23.203.21
-    network: tcp
+    password: bd85f5fe32d9446a8b1f59e4f710455b
+    sni: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
+    network: ws
     skip-cert-verify: true
-  - name: "🇸🇬[www.v2nodes.com] vless-SG #6 - 87ms"
+    ws-opts:
+      path: /eyJqdW5rIjoibkN2cER2SDZIUTkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6IiIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed=2560
+      headers:
+        Host: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
+  - name: "🇸🇬[www.v2nodes.com] vless-SG #4 - 116ms"
+    server: 104.18.37.228
+    port: 8880
+    udp: true
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: vms.lifetime29.workers.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime29.workers.dev
+  - name: "🇸🇬[www.v2nodes.com] vless-SG #6 - 106ms"
     server: vl.cocopon.top
     port: 2053
     udp: true
@@ -375,10 +727,113 @@ proxies:
     flow: ""
     skip-cert-verify: true
     ws-opts:
-      path: /
+      path: /fp=random
       headers:
         Host: vl.cocopon.top
-  - name: "🇺🇸 美国 | USA #11 - 216ms"
+  - name: 🇺🇸US_3|1.6MB/s - 196ms
+    server: 185.162.229.50
+    port: 8880
+    udp: true
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: vms.lifetime61.workers.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime61.workers.dev
+  - name: 🇺🇸US_4|1.7MB/s - 182ms
+    server: 192.65.217.30
+    port: 8880
+    udp: true
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: vms.lifetime37.workers.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime37.workers.dev
+  - name: "🇺🇸 美国 | USA #9 - 106ms"
+    server: 154.197.75.50
+    port: 8880
+    udp: true
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: vms.lifetime37.workers.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: vms.lifetime37.workers.dev
+  - name: 🇺🇸US_6|1.5MB/s - 101ms
+    server: 103.169.142.30
+    port: 8880
+    udp: true
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: vms.lifetime38.workers.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime38.workers.dev
+  - name: 🇺🇸US_7|1.0MB/s - 127ms
+    server: 185.162.229.40
+    port: 8880
+    udp: true
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: vms.lifetime61.workers.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: vms.lifetime61.workers.dev
+  - name: 🇸🇬SG_2|3.5MB/s - 71ms
+    server: 8.35.211.114
+    port: 2053
+    udp: true
+    type: vless
+    uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
+    tls: true
+    servername: go.iranfree.de5.net
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: go.iranfree.de5.net
+  - name: 🇩🇪 德国 | DEU 2 - 124ms
+    server: russia.com
+    port: 443
+    udp: true
+    type: trojan
+    password: bpb-trojan
+    sni: 6982410.xyz
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /trh3
+      headers:
+        Host: 6982410.xyz
+  - name: "🇺🇸 美国 | USA #11 - 260ms"
     server: 104.17.44.17
     port: 443
     udp: true
@@ -390,50 +845,82 @@ proxies:
     flow: ""
     skip-cert-verify: true
     ws-opts:
-      path: /
+      path: /fp=unsafe
       headers:
         Host: top-e4s.pages.dev
 proxy-groups:
   - name: Auto Select
     type: url-test
     proxies:
-      - 未知 TROJAN-138 | free-nodes - 50ms
-      - 🇺🇸_美国_26 - 42ms
-      - 🇺🇸_美国_31 - 120ms
-      - 🇺🇸_美国_35 - 105ms
-      - 🇺🇸_美国_39 - 73ms
-      - 🇺🇸_美国_45 - 221ms
-      - 🇨🇦_加拿大_47 - 254ms
-      - 🇺🇸_美国_50 - 215ms
-      - 🏳️_未知_247 - 66ms
-      - 🏳️_未知_367 - 201ms
-      - 🏳️_未知_392 - 132ms
-      - 🇺🇸_美国_393 - 305ms
-      - 🇺🇸_美国_409 - 285ms
-      - 🇺🇸_美国_410 - 293ms
-      - 🏳️_未知_500 - 81ms
-      - USA - 129ms
-      - EUA - 138ms
-      - United+States - 101ms
-      - United+States - 204ms
-      - États+Unis - 276ms
-      - "🇳🇱 荷兰 | NLD #2 - 69ms"
-      - 🇨🇦[www.v2nodes.com] ss-CA-1557... - 264ms
-      - 🇺🇸[www.v2nodes.com] ss-US-1602... - 214ms
-      - "🇺🇸[www.v2nodes.com] ss-US-1602... #1 - 239ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1602... #2 - 232ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1602... #3 - 175ms"
-      - "🇺🇸 美国 | USA #4 - 80ms"
-      - "🇺🇸 美国 | USA #9 - 110ms"
-      - United States/San Jose [GH:Mahdi0024/Pro] - 26ms
-      - United States/Atlanta [GH:barry-far/V2r] - 173ms
-      - United States/Washington [GH:barry-far/V2r] - 232ms
-      - 🇺🇸 United States/New York [TG] - 227ms
-      - 🍎98@oneclickvpnkeys - 289ms
-      - "🇸🇬[www.v2nodes.com] vless-SG-1... #7 - 95ms"
-      - "🇺🇸[www.v2nodes.com] trojan-US-... #3 - 169ms"
-      - "🇸🇬[www.v2nodes.com] vless-SG #6 - 87ms"
-      - "🇺🇸 美国 | USA #11 - 216ms"
+      - 🇺🇸_美国_31 - 149ms
+      - 🇺🇸_美国_35 - 158ms
+      - 🇺🇸_美国_39 - 71ms
+      - 🇺🇸_美国_44 - 221ms
+      - 🇺🇸_美国_45 - 246ms
+      - 🇨🇦_加拿大_46 - 246ms
+      - 🇨🇦_加拿大_47 - 204ms
+      - 🇺🇸_美国_50 - 263ms
+      - 🇺🇸_美国_51 - 198ms
+      - 🇺🇸_美国_119 - 65ms
+      - 🇨🇦_加拿大_215 - 209ms
+      - 🇺🇸_美国_238 - 134ms
+      - 🏳️_未知_247 - 70ms
+      - 🇸🇮_斯洛文尼亚_268 - 122ms
+      - 🇺🇸_美国_269 - 135ms
+      - 🇷🇺_俄罗斯_276 - 126ms
+      - 🏳️_未知_333 - 346ms
+      - 🏳️_未知_367 - 215ms
+      - 🏳️_未知_373 - 195ms
+      - 🏳️_未知_392 - 220ms
+      - 🇺🇸_美国_393 - 86ms
+      - 🏳️_未知_397 - 263ms
+      - 🏳️_未知_398 - 207ms
+      - 🏳️_未知_400 - 186ms
+      - 🏳️_未知_401 - 270ms
+      - 🏳️_未知_402 - 251ms
+      - 🏳️_未知_405 - 194ms
+      - 🏳️_未知_406 - 274ms
+      - 🇺🇸_美国_409 - 305ms
+      - 🇺🇸_美国_410 - 283ms
+      - France - 77ms
+      - Malaysia - 92ms
+      - United+States - 325ms
+      - États+Unis - 325ms
+      - アメリカ - 79ms
+      - United+States - 108ms
+      - United+States - 275ms
+      - "🏳[www.v2nodes.com] vless- #4 - 77ms"
+      - "🏳[www.v2nodes.com] vless- #16 - 163ms"
+      - 🇨🇦[www.v2nodes.com] ss-CA-1559... - 295ms
+      - "🇨🇦[www.v2nodes.com] ss-CA-1559... #1 - 346ms"
+      - 🇨🇦[www.v2nodes.com] ss-CA-1557... - 259ms
+      - 🇨🇦[www.v2nodes.com] ss-CA-1545... - 316ms
+      - 🇯🇵[www.v2nodes.com] ss-JP-1598... - 327ms
+      - 🇺🇸[www.v2nodes.com] ss-US-1602... - 72ms
+      - "🇺🇸[www.v2nodes.com] ss-US-1602... #1 - 209ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1602... #2 - 215ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1602... #3 - 271ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1602... #4 - 179ms"
+      - "🇸🇬 新加坡 | SGP #2 - 137ms"
+      - "🇺🇸 美国 | USA #1 - 241ms"
+      - "🇺🇸 美国 | USA #6 - 81ms"
+      - "United States/San Francisco [TG] #3 - 186ms"
+      - Singapore [TG] - 85ms
+      - United States/San Jose [GH:Mahdi0024/Pro] - 29ms
+      - United States/Atlanta [GH:barry-far/V2r] - 176ms
+      - United States/Washington [GH:barry-far/V2r] - 198ms
+      - "🏳[www.v2nodes.com] vless- #51 - 58ms"
+      - 🇺🇸 美国 | USA - 110ms
+      - "🇸🇬[www.v2nodes.com] vless-SG #4 - 116ms"
+      - "🇸🇬[www.v2nodes.com] vless-SG #6 - 106ms"
+      - 🇺🇸US_3|1.6MB/s - 196ms
+      - 🇺🇸US_4|1.7MB/s - 182ms
+      - "🇺🇸 美国 | USA #9 - 106ms"
+      - 🇺🇸US_6|1.5MB/s - 101ms
+      - 🇺🇸US_7|1.0MB/s - 127ms
+      - 🇸🇬SG_2|3.5MB/s - 71ms
+      - 🇩🇪 德国 | DEU 2 - 124ms
+      - "🇺🇸 美国 | USA #11 - 260ms"
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -441,42 +928,74 @@ proxy-groups:
     type: select
     proxies:
       - Auto Select
-      - 未知 TROJAN-138 | free-nodes - 50ms
-      - 🇺🇸_美国_26 - 42ms
-      - 🇺🇸_美国_31 - 120ms
-      - 🇺🇸_美国_35 - 105ms
-      - 🇺🇸_美国_39 - 73ms
-      - 🇺🇸_美国_45 - 221ms
-      - 🇨🇦_加拿大_47 - 254ms
-      - 🇺🇸_美国_50 - 215ms
-      - 🏳️_未知_247 - 66ms
-      - 🏳️_未知_367 - 201ms
-      - 🏳️_未知_392 - 132ms
-      - 🇺🇸_美国_393 - 305ms
-      - 🇺🇸_美国_409 - 285ms
-      - 🇺🇸_美国_410 - 293ms
-      - 🏳️_未知_500 - 81ms
-      - USA - 129ms
-      - EUA - 138ms
-      - United+States - 101ms
-      - United+States - 204ms
-      - États+Unis - 276ms
-      - "🇳🇱 荷兰 | NLD #2 - 69ms"
-      - 🇨🇦[www.v2nodes.com] ss-CA-1557... - 264ms
-      - 🇺🇸[www.v2nodes.com] ss-US-1602... - 214ms
-      - "🇺🇸[www.v2nodes.com] ss-US-1602... #1 - 239ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1602... #2 - 232ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1602... #3 - 175ms"
-      - "🇺🇸 美国 | USA #4 - 80ms"
-      - "🇺🇸 美国 | USA #9 - 110ms"
-      - United States/San Jose [GH:Mahdi0024/Pro] - 26ms
-      - United States/Atlanta [GH:barry-far/V2r] - 173ms
-      - United States/Washington [GH:barry-far/V2r] - 232ms
-      - 🇺🇸 United States/New York [TG] - 227ms
-      - 🍎98@oneclickvpnkeys - 289ms
-      - "🇸🇬[www.v2nodes.com] vless-SG-1... #7 - 95ms"
-      - "🇺🇸[www.v2nodes.com] trojan-US-... #3 - 169ms"
-      - "🇸🇬[www.v2nodes.com] vless-SG #6 - 87ms"
-      - "🇺🇸 美国 | USA #11 - 216ms"
+      - 🇺🇸_美国_31 - 149ms
+      - 🇺🇸_美国_35 - 158ms
+      - 🇺🇸_美国_39 - 71ms
+      - 🇺🇸_美国_44 - 221ms
+      - 🇺🇸_美国_45 - 246ms
+      - 🇨🇦_加拿大_46 - 246ms
+      - 🇨🇦_加拿大_47 - 204ms
+      - 🇺🇸_美国_50 - 263ms
+      - 🇺🇸_美国_51 - 198ms
+      - 🇺🇸_美国_119 - 65ms
+      - 🇨🇦_加拿大_215 - 209ms
+      - 🇺🇸_美国_238 - 134ms
+      - 🏳️_未知_247 - 70ms
+      - 🇸🇮_斯洛文尼亚_268 - 122ms
+      - 🇺🇸_美国_269 - 135ms
+      - 🇷🇺_俄罗斯_276 - 126ms
+      - 🏳️_未知_333 - 346ms
+      - 🏳️_未知_367 - 215ms
+      - 🏳️_未知_373 - 195ms
+      - 🏳️_未知_392 - 220ms
+      - 🇺🇸_美国_393 - 86ms
+      - 🏳️_未知_397 - 263ms
+      - 🏳️_未知_398 - 207ms
+      - 🏳️_未知_400 - 186ms
+      - 🏳️_未知_401 - 270ms
+      - 🏳️_未知_402 - 251ms
+      - 🏳️_未知_405 - 194ms
+      - 🏳️_未知_406 - 274ms
+      - 🇺🇸_美国_409 - 305ms
+      - 🇺🇸_美国_410 - 283ms
+      - France - 77ms
+      - Malaysia - 92ms
+      - United+States - 325ms
+      - États+Unis - 325ms
+      - アメリカ - 79ms
+      - United+States - 108ms
+      - United+States - 275ms
+      - "🏳[www.v2nodes.com] vless- #4 - 77ms"
+      - "🏳[www.v2nodes.com] vless- #16 - 163ms"
+      - 🇨🇦[www.v2nodes.com] ss-CA-1559... - 295ms
+      - "🇨🇦[www.v2nodes.com] ss-CA-1559... #1 - 346ms"
+      - 🇨🇦[www.v2nodes.com] ss-CA-1557... - 259ms
+      - 🇨🇦[www.v2nodes.com] ss-CA-1545... - 316ms
+      - 🇯🇵[www.v2nodes.com] ss-JP-1598... - 327ms
+      - 🇺🇸[www.v2nodes.com] ss-US-1602... - 72ms
+      - "🇺🇸[www.v2nodes.com] ss-US-1602... #1 - 209ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1602... #2 - 215ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1602... #3 - 271ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1602... #4 - 179ms"
+      - "🇸🇬 新加坡 | SGP #2 - 137ms"
+      - "🇺🇸 美国 | USA #1 - 241ms"
+      - "🇺🇸 美国 | USA #6 - 81ms"
+      - "United States/San Francisco [TG] #3 - 186ms"
+      - Singapore [TG] - 85ms
+      - United States/San Jose [GH:Mahdi0024/Pro] - 29ms
+      - United States/Atlanta [GH:barry-far/V2r] - 176ms
+      - United States/Washington [GH:barry-far/V2r] - 198ms
+      - "🏳[www.v2nodes.com] vless- #51 - 58ms"
+      - 🇺🇸 美国 | USA - 110ms
+      - "🇸🇬[www.v2nodes.com] vless-SG #4 - 116ms"
+      - "🇸🇬[www.v2nodes.com] vless-SG #6 - 106ms"
+      - 🇺🇸US_3|1.6MB/s - 196ms
+      - 🇺🇸US_4|1.7MB/s - 182ms
+      - "🇺🇸 美国 | USA #9 - 106ms"
+      - 🇺🇸US_6|1.5MB/s - 101ms
+      - 🇺🇸US_7|1.0MB/s - 127ms
+      - 🇸🇬SG_2|3.5MB/s - 71ms
+      - 🇩🇪 德国 | DEU 2 - 124ms
+      - "🇺🇸 美国 | USA #11 - 260ms"
 rules:
   - MATCH,Proxy

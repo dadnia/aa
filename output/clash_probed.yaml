@@ -5,17 +5,188 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - name: 🇺🇸_美国 - 266ms
-    server: 216.152.156.65
+  - name: 美国 CloudFlare节点 - 176ms
+    server: 172.67.187.145
+    port: 80
+    udp: true
+    type: vmess
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: 美国+CloudFlare节点 - 129ms
+    server: cf.090227.xyz
+    port: 443
+    udp: true
+    type: vless
+    uuid: d342d11e-d224-4463-b982-532309285094
+    tls: true
+    servername: ccc.010304.xyz
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /fp=chromefp=chrome
+      headers:
+        Host: ccc.010304.xyz
+  - name: 🇺🇸_美国 (10) - 195ms
+    server: 167.88.61.193
     port: 443
     udp: true
     type: trojan
     password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: learn.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+    sni: browseseniorrolesandenhanceyourcareertoday.com
     network: tcp
     skip-cert-verify: true
-  - name: 🇺🇸_美国 (8) - 43ms
-    server: 169.197.142.22
+  - name: 🇺🇸_美国 (58) - 169ms
+    server: 169.197.140.169
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: api.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (60) - 167ms
+    server: 169.197.140.214
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: courses.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (56) - 163ms
+    server: 169.197.140.218
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (35) - 242ms
+    server: 170.101.101.131
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: blog.explorecreativejobsandenhanceyourcareerportfolio.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (34) - 234ms
+    server: 170.101.101.53
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: www.explorecreativejobsandenhanceyourcareerportfolio.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (84) - 339ms
+    server: 172.66.0.1
+    port: 443
+    udp: true
+    type: vmess
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /ws
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: 🇨🇦_加拿大 (6) - 228ms
+    server: 216.152.147.79
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: blog.connectingpeoplewithgreatjobs.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇨🇦_加拿大 (3) - 221ms
+    server: 216.152.147.89
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: www.connectingpeoplewithgreatjobs.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (29) - 277ms
+    server: 216.152.155.131
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: www.nextjobopportunityandclaimyouridealrole.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (33) - 273ms
+    server: 216.152.155.158
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: resources.nextjobopportunityandclaimyouridealrole.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (26) - 167ms
+    server: 216.152.155.176
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: blog.nextjobopportunityandclaimyouridealrole.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (24) - 145ms
+    server: 216.152.155.23
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: courses.nextjobopportunityandclaimyouridealrole.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (23) - 276ms
+    server: 216.152.155.54
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: learn.nextjobopportunityandclaimyouridealrole.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (40) - 341ms
+    server: 216.152.156.81
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: www.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇲🇽_墨西哥 - 146ms
+    server: 216.238.80.100
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: connectwithtopemployersandfindidealjobs.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇨🇦_加拿大 (2) - 170ms
+    server: 23.162.200.198
     port: 18000
     udp: true
     type: vmess
@@ -25,22 +196,22 @@ proxies:
     tls: false
     network: tcp
     skip-cert-verify: true
-  - name: 🇺🇸_美国 (25) - 89ms
-    server: 129.146.77.248
-    port: 39495
+  - name: 🇺🇸_美国 (81) - 45ms
+    server: 38.107.232.36
+    port: 80
     udp: true
-    type: vmess
-    uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-    alterId: 0
-    cipher: auto
+    type: vless
+    uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
     tls: false
+    servername: 38.107.232.36
     network: ws
+    flow: ""
     skip-cert-verify: true
     ws-opts:
-      path: /cctv13.m3u8
+      path: /vless/
       headers:
-        Host: 129.146.77.248
-  - name: 🇺🇸_美国 (27) - 294ms
+        Host: 38.107.232.36
+  - name: 🇺🇸_美国 (54) - 164ms
     server: 38.91.107.49
     port: 18000
     udp: true
@@ -51,25 +222,115 @@ proxies:
     tls: false
     network: tcp
     skip-cert-verify: true
-  - name: 🇺🇸_美国 (28) - 253ms
-    server: 216.152.156.42
+  - name: 🇺🇸_美国 (13) - 142ms
+    server: 66.163.112.121
     port: 443
     udp: true
     type: trojan
     password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: blog.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+    sni: www.unlockyourfuturefindyourperfectcareer.com
     network: tcp
     skip-cert-verify: true
-  - name: 🇺🇸_美国 (29) - 269ms
-    server: 216.152.156.49
+  - name: 🇺🇸_美国 (21) - 153ms
+    server: 66.163.112.13
     port: 443
     udp: true
     type: trojan
     password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+    sni: blog.unlockyourfuturefindyourperfectcareer.com
     network: tcp
     skip-cert-verify: true
-  - name: Estados Unidos - 99ms
+  - name: 🇺🇸_美国 (59) - 155ms
+    server: 66.163.112.142
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: cdn.unlockyourfuturefindyourperfectcareer.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (11) - 148ms
+    server: 66.163.112.147
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: courses.unlockyourfuturefindyourperfectcareer.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (17) - 153ms
+    server: 66.163.112.171
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: learn.unlockyourfuturefindyourperfectcareer.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (15) - 148ms
+    server: 66.163.112.242
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: resources.unlockyourfuturefindyourperfectcareer.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (19) - 141ms
+    server: 66.163.112.76
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: api.unlockyourfuturefindyourperfectcareer.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (9) - 149ms
+    server: 66.163.114.106
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: www.findconnectwithemployersandbuildprofessionalnetwork.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (16) - 184ms
+    server: 66.163.114.132
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (12) - 142ms
+    server: 66.163.114.166
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (27) - 186ms
+    server: 66.163.114.45
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: cdn.findconnectwithemployersandbuildprofessionalnetwork.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (38) - 174ms
+    server: 69.164.240.85
+    port: 50875
+    udp: true
+    type: trojan
+    password: nwilryafgkyvuxauc8pz
+    sni: 69.164.240.85
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 - 188ms
     server: 84.17.41.2
     port: 18000
     udp: true
@@ -80,25 +341,21 @@ proxies:
     tls: false
     network: tcp
     skip-cert-verify: true
-  - name: United States - 226ms
-    server: 38.110.1.246
-    port: 18000
-    udp: true
-    type: vmess
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    skip-cert-verify: true
-  - name: États+Unis - 136ms
-    server: 156.146.38.168
+  - name: United+States - 43ms
+    server: 156.146.38.167
     port: 443
     udp: true
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: "🏳[www.v2nodes.com] vless- #1 - 92ms"
+  - name: États+Unis - 45ms
+    server: 156.146.38.170
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: "🇵🇱[www.v2nodes.com] vless-PL-1... #6 - 114ms"
     server: 104.21.221.158
     port: 443
     udp: true
@@ -113,52 +370,7 @@ proxies:
       path: /fp=chrome
       headers:
         Host: ccc.010304.xyz
-  - name: 🇸🇬[www.v2nodes.com] vless-SG - 139ms
-    server: 104.26.4.2
-    port: 443
-    udp: true
-    type: vless
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    servername: ccc.010304.xyz
-    network: ws
-    flow: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: ccc.010304.xyz
-  - name: "🇸🇬[www.v2nodes.com] vless-SG #1 - 71ms"
-    server: 172.67.76.40
-    port: 443
-    udp: true
-    type: vless
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    servername: ccc.010304.xyz
-    network: ws
-    flow: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        Host: ccc.010304.xyz
-  - name: "🇸🇬[www.v2nodes.com] vless-SG #2 - 137ms"
-    server: 172.66.0.162
-    port: 443
-    udp: true
-    type: vless
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    servername: ccc.010304.xyz
-    network: ws
-    flow: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        Host: ccc.010304.xyz
-  - name: "🏳[www.v2nodes.com] vless- #4 - 79ms"
+  - name: 🇸🇬[www.v2nodes.com] vless-SG - 106ms
     server: 172.64.152.241
     port: 443
     udp: true
@@ -170,32 +382,46 @@ proxies:
     flow: ""
     skip-cert-verify: true
     ws-opts:
-      path: /
+      path: /fp=chromefp=chrome
       headers:
         Host: ccc.010304.xyz
-  - name: "🇸🇬[www.v2nodes.com] vless-SG-1... #8 - 86ms"
-    server: 104.18.40.100
-    port: 443
+  - name: "🇸🇬[www.v2nodes.com] vless-SG-9... #1 - 109ms"
+    server: 172.64.150.28
+    port: 2082
     udp: true
     type: vless
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    servername: ccc.010304.xyz
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    tls: false
+    servername: 172.64.150.28
     network: ws
     flow: ""
     skip-cert-verify: true
     ws-opts:
-      path: /
+      path: /fp
       headers:
-        Host: ccc.010304.xyz
-  - name: "🇸🇬[www.v2nodes.com] vless-SG-9... #1 - 182ms"
-    server: 172.64.150.43
+        Host: hhlfy.twiladaphne.ndjp.net
+  - name: 🇨🇦[www.v2nodes.com] ss-CA-1557... - 210ms
+    server: 51.222.136.236
+    port: 8882
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+  - name: 🇬🇧[www.v2nodes.com] ss-GB-1451... - 349ms
+    server: 158.173.24.73
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇺🇸US_8|2.2MB/s - 114ms
+    server: 104.16.162.89
     port: 8080
     udp: true
     type: vless
     uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
     tls: false
-    servername: hhlfy.twiladaphne.ndjp.net
+    servername: 104.16.162.89
     network: ws
     flow: ""
     skip-cert-verify: true
@@ -203,67 +429,7 @@ proxies:
       path: /sg-melbi
       headers:
         Host: hhlfy.twiladaphne.ndjp.net
-  - name: "🏳[www.v2nodes.com] trojan- #12 - 248ms"
-    server: 216.152.156.212
-    port: 443
-    udp: true
-    type: trojan
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: courses.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-    network: tcp
-    skip-cert-verify: true
-  - name: "🇺🇸[www.v2nodes.com] trojan-US-... #10 - 278ms"
-    server: 169.197.140.169
-    port: 443
-    udp: true
-    type: trojan
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: 169.197.140.169
-    network: tcp
-    skip-cert-verify: true
-  - name: "🏳[www.v2nodes.com] trojan- #8 - 139ms"
-    server: 66.163.114.132
-    port: 443
-    udp: true
-    type: trojan
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com
-    network: tcp
-    skip-cert-verify: true
-  - name: "🏳[www.v2nodes.com] trojan- #10 - 140ms"
-    server: 66.163.114.166
-    port: 443
-    udp: true
-    type: trojan
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
-    network: tcp
-    skip-cert-verify: true
-  - name: "🇺🇸[www.v2nodes.com] trojan-US-... #13 - 144ms"
-    server: 66.163.114.245
-    port: 443
-    udp: true
-    type: trojan
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: 66.163.114.245
-    network: tcp
-    skip-cert-verify: true
-  - name: "🇺🇸 美国 | USA #2 - 71ms"
-    server: 104.18.45.38
-    port: 443
-    udp: true
-    type: vless
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    servername: ccc.010304.xyz
-    network: ws
-    flow: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /fp
-      headers:
-        Host: ccc.010304.xyz
-  - name: United States/San Francisco [TG] - 86ms
+  - name: "United States/San Francisco [TG] #2 - 132ms"
     server: 104.18.35.15
     port: 443
     udp: true
@@ -278,8 +444,8 @@ proxies:
       path: /fp=chrome
       headers:
         Host: ccc.010304.xyz
-  - name: "United States/San Francisco [TG] #2 - 75ms"
-    server: chatgpt.com
+  - name: "United States/San Francisco [TG] #6 - 118ms"
+    server: 104.18.40.100
     port: 443
     udp: true
     type: vless
@@ -293,8 +459,8 @@ proxies:
       path: /
       headers:
         Host: ccc.010304.xyz
-  - name: "United States/San Francisco [GH:Surfboardv2ra] #2 - 141ms"
-    server: cf.877774.xyz
+  - name: 🇸🇬[www.v2nodes.com] vless-SG - 130ms
+    server: 172.64.153.153
     port: 443
     udp: true
     type: vless
@@ -305,124 +471,84 @@ proxies:
     flow: ""
     skip-cert-verify: true
     ws-opts:
-      path: /
+      path: /fp=chrome
       headers:
         Host: ccc.010304.xyz
-  - name: United States/Phoenix [GH:Mahdi0024/Pro] - 74ms
-    server: 173.244.56.6
+  - name: "🇸🇬[www.v2nodes.com] vless-SG #1 - 110ms"
+    server: 172.67.76.40
     port: 443
     udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: United States/Seattle [GH:Mahdi0024/Pro] - 160ms
-    server: www.findlocaljobnetworkandbuildcommunityconnections.com
-    port: 443
-    udp: true
-    type: trojan
-    password: 242a3d8eee5e4ed1a6bfa4141d549a25
-    sni: www.findlocaljobnetworkandbuildcommunityconnections.com
-    network: tcp
+    type: vless
+    uuid: d342d11e-d224-4463-b982-532309285094
+    tls: true
+    servername: ccc.010304.xyz
+    network: ws
+    flow: ""
     skip-cert-verify: true
-  - name: United States/Dallas [GH:Mahdi0024/Pro] - 126ms
-    server: 156.146.38.167
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: United States/New York [GH:Mahdi0024/Pro] - 210ms
-    server: 37.19.198.243
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: "United States/New York [GH:Mahdi0024/Pro] #2 - 241ms"
-    server: 37.19.198.244
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: United States/Chicago [GH:Mahdi0024/Pro] - 242ms
-    server: 138.199.42.68
-    port: 8080
-    udp: true
-    type: ss
-    cipher: rc4-md5
-    password: 14fFPrbezE3HDZzsMOr6
-  - name: "United States/San Jose [GH:Mahdi0024/Pro] #2 - 83ms"
-    server: 23.251.121.242
-    port: 8080
-    udp: true
-    type: ss
-    cipher: rc4-md5
-    password: 14fFPrbezE3HDZzsMOr6
-  - name: "United States/Seattle [GH:Mahdi0024/Pro] #3 - 106ms"
-    server: 138.199.43.159
-    port: 8080
-    udp: true
-    type: ss
-    cipher: rc4-md5
-    password: 14fFPrbezE3HDZzsMOr6
-  - name: "🇺🇸[www.v2nodes.com] trojan-US-... #10 - 284ms"
-    server: 66.163.114.114
-    port: 443
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: ccc.010304.xyz
+  - name: 🇲🇽MX_1|1.0MB/s - 332ms
+    server: mx001.zestapp778.com
+    port: 15083
     udp: true
     type: trojan
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com
-    network: tcp
-    skip-cert-verify: true
-  - name: "🇺🇸[www.v2nodes.com] trojan-US-... #5 - 251ms"
-    server: 216.152.156.81
-    port: 443
-    udp: true
-    type: trojan
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: www.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+    password: 5t6i121em5lkmsmk
+    sni: mx001.zestapp778.com
     network: tcp
     skip-cert-verify: true
 proxy-groups:
   - name: Auto Select
     type: url-test
     proxies:
-      - 🇺🇸_美国 - 266ms
-      - 🇺🇸_美国 (8) - 43ms
-      - 🇺🇸_美国 (25) - 89ms
-      - 🇺🇸_美国 (27) - 294ms
-      - 🇺🇸_美国 (28) - 253ms
-      - 🇺🇸_美国 (29) - 269ms
-      - Estados Unidos - 99ms
-      - United States - 226ms
-      - États+Unis - 136ms
-      - "🏳[www.v2nodes.com] vless- #1 - 92ms"
-      - 🇸🇬[www.v2nodes.com] vless-SG - 139ms
-      - "🇸🇬[www.v2nodes.com] vless-SG #1 - 71ms"
-      - "🇸🇬[www.v2nodes.com] vless-SG #2 - 137ms"
-      - "🏳[www.v2nodes.com] vless- #4 - 79ms"
-      - "🇸🇬[www.v2nodes.com] vless-SG-1... #8 - 86ms"
-      - "🇸🇬[www.v2nodes.com] vless-SG-9... #1 - 182ms"
-      - "🏳[www.v2nodes.com] trojan- #12 - 248ms"
-      - "🇺🇸[www.v2nodes.com] trojan-US-... #10 - 278ms"
-      - "🏳[www.v2nodes.com] trojan- #8 - 139ms"
-      - "🏳[www.v2nodes.com] trojan- #10 - 140ms"
-      - "🇺🇸[www.v2nodes.com] trojan-US-... #13 - 144ms"
-      - "🇺🇸 美国 | USA #2 - 71ms"
-      - United States/San Francisco [TG] - 86ms
-      - "United States/San Francisco [TG] #2 - 75ms"
-      - "United States/San Francisco [GH:Surfboardv2ra] #2 - 141ms"
-      - United States/Phoenix [GH:Mahdi0024/Pro] - 74ms
-      - United States/Seattle [GH:Mahdi0024/Pro] - 160ms
-      - United States/Dallas [GH:Mahdi0024/Pro] - 126ms
-      - United States/New York [GH:Mahdi0024/Pro] - 210ms
-      - "United States/New York [GH:Mahdi0024/Pro] #2 - 241ms"
-      - United States/Chicago [GH:Mahdi0024/Pro] - 242ms
-      - "United States/San Jose [GH:Mahdi0024/Pro] #2 - 83ms"
-      - "United States/Seattle [GH:Mahdi0024/Pro] #3 - 106ms"
-      - "🇺🇸[www.v2nodes.com] trojan-US-... #10 - 284ms"
-      - "🇺🇸[www.v2nodes.com] trojan-US-... #5 - 251ms"
+      - 美国 CloudFlare节点 - 176ms
+      - 美国+CloudFlare节点 - 129ms
+      - 🇺🇸_美国 (10) - 195ms
+      - 🇺🇸_美国 (58) - 169ms
+      - 🇺🇸_美国 (60) - 167ms
+      - 🇺🇸_美国 (56) - 163ms
+      - 🇺🇸_美国 (35) - 242ms
+      - 🇺🇸_美国 (34) - 234ms
+      - 🇺🇸_美国 (84) - 339ms
+      - 🇨🇦_加拿大 (6) - 228ms
+      - 🇨🇦_加拿大 (3) - 221ms
+      - 🇺🇸_美国 (29) - 277ms
+      - 🇺🇸_美国 (33) - 273ms
+      - 🇺🇸_美国 (26) - 167ms
+      - 🇺🇸_美国 (24) - 145ms
+      - 🇺🇸_美国 (23) - 276ms
+      - 🇺🇸_美国 (40) - 341ms
+      - 🇲🇽_墨西哥 - 146ms
+      - 🇨🇦_加拿大 (2) - 170ms
+      - 🇺🇸_美国 (81) - 45ms
+      - 🇺🇸_美国 (54) - 164ms
+      - 🇺🇸_美国 (13) - 142ms
+      - 🇺🇸_美国 (21) - 153ms
+      - 🇺🇸_美国 (59) - 155ms
+      - 🇺🇸_美国 (11) - 148ms
+      - 🇺🇸_美国 (17) - 153ms
+      - 🇺🇸_美国 (15) - 148ms
+      - 🇺🇸_美国 (19) - 141ms
+      - 🇺🇸_美国 (9) - 149ms
+      - 🇺🇸_美国 (16) - 184ms
+      - 🇺🇸_美国 (12) - 142ms
+      - 🇺🇸_美国 (27) - 186ms
+      - 🇺🇸_美国 (38) - 174ms
+      - 🇺🇸_美国 - 188ms
+      - United+States - 43ms
+      - États+Unis - 45ms
+      - "🇵🇱[www.v2nodes.com] vless-PL-1... #6 - 114ms"
+      - 🇸🇬[www.v2nodes.com] vless-SG - 106ms
+      - "🇸🇬[www.v2nodes.com] vless-SG-9... #1 - 109ms"
+      - 🇨🇦[www.v2nodes.com] ss-CA-1557... - 210ms
+      - 🇬🇧[www.v2nodes.com] ss-GB-1451... - 349ms
+      - 🇺🇸US_8|2.2MB/s - 114ms
+      - "United States/San Francisco [TG] #2 - 132ms"
+      - "United States/San Francisco [TG] #6 - 118ms"
+      - 🇸🇬[www.v2nodes.com] vless-SG - 130ms
+      - "🇸🇬[www.v2nodes.com] vless-SG #1 - 110ms"
+      - 🇲🇽MX_1|1.0MB/s - 332ms
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -430,40 +556,52 @@ proxy-groups:
     type: select
     proxies:
       - Auto Select
-      - 🇺🇸_美国 - 266ms
-      - 🇺🇸_美国 (8) - 43ms
-      - 🇺🇸_美国 (25) - 89ms
-      - 🇺🇸_美国 (27) - 294ms
-      - 🇺🇸_美国 (28) - 253ms
-      - 🇺🇸_美国 (29) - 269ms
-      - Estados Unidos - 99ms
-      - United States - 226ms
-      - États+Unis - 136ms
-      - "🏳[www.v2nodes.com] vless- #1 - 92ms"
-      - 🇸🇬[www.v2nodes.com] vless-SG - 139ms
-      - "🇸🇬[www.v2nodes.com] vless-SG #1 - 71ms"
-      - "🇸🇬[www.v2nodes.com] vless-SG #2 - 137ms"
-      - "🏳[www.v2nodes.com] vless- #4 - 79ms"
-      - "🇸🇬[www.v2nodes.com] vless-SG-1... #8 - 86ms"
-      - "🇸🇬[www.v2nodes.com] vless-SG-9... #1 - 182ms"
-      - "🏳[www.v2nodes.com] trojan- #12 - 248ms"
-      - "🇺🇸[www.v2nodes.com] trojan-US-... #10 - 278ms"
-      - "🏳[www.v2nodes.com] trojan- #8 - 139ms"
-      - "🏳[www.v2nodes.com] trojan- #10 - 140ms"
-      - "🇺🇸[www.v2nodes.com] trojan-US-... #13 - 144ms"
-      - "🇺🇸 美国 | USA #2 - 71ms"
-      - United States/San Francisco [TG] - 86ms
-      - "United States/San Francisco [TG] #2 - 75ms"
-      - "United States/San Francisco [GH:Surfboardv2ra] #2 - 141ms"
-      - United States/Phoenix [GH:Mahdi0024/Pro] - 74ms
-      - United States/Seattle [GH:Mahdi0024/Pro] - 160ms
-      - United States/Dallas [GH:Mahdi0024/Pro] - 126ms
-      - United States/New York [GH:Mahdi0024/Pro] - 210ms
-      - "United States/New York [GH:Mahdi0024/Pro] #2 - 241ms"
-      - United States/Chicago [GH:Mahdi0024/Pro] - 242ms
-      - "United States/San Jose [GH:Mahdi0024/Pro] #2 - 83ms"
-      - "United States/Seattle [GH:Mahdi0024/Pro] #3 - 106ms"
-      - "🇺🇸[www.v2nodes.com] trojan-US-... #10 - 284ms"
-      - "🇺🇸[www.v2nodes.com] trojan-US-... #5 - 251ms"
+      - 美国 CloudFlare节点 - 176ms
+      - 美国+CloudFlare节点 - 129ms
+      - 🇺🇸_美国 (10) - 195ms
+      - 🇺🇸_美国 (58) - 169ms
+      - 🇺🇸_美国 (60) - 167ms
+      - 🇺🇸_美国 (56) - 163ms
+      - 🇺🇸_美国 (35) - 242ms
+      - 🇺🇸_美国 (34) - 234ms
+      - 🇺🇸_美国 (84) - 339ms
+      - 🇨🇦_加拿大 (6) - 228ms
+      - 🇨🇦_加拿大 (3) - 221ms
+      - 🇺🇸_美国 (29) - 277ms
+      - 🇺🇸_美国 (33) - 273ms
+      - 🇺🇸_美国 (26) - 167ms
+      - 🇺🇸_美国 (24) - 145ms
+      - 🇺🇸_美国 (23) - 276ms
+      - 🇺🇸_美国 (40) - 341ms
+      - 🇲🇽_墨西哥 - 146ms
+      - 🇨🇦_加拿大 (2) - 170ms
+      - 🇺🇸_美国 (81) - 45ms
+      - 🇺🇸_美国 (54) - 164ms
+      - 🇺🇸_美国 (13) - 142ms
+      - 🇺🇸_美国 (21) - 153ms
+      - 🇺🇸_美国 (59) - 155ms
+      - 🇺🇸_美国 (11) - 148ms
+      - 🇺🇸_美国 (17) - 153ms
+      - 🇺🇸_美国 (15) - 148ms
+      - 🇺🇸_美国 (19) - 141ms
+      - 🇺🇸_美国 (9) - 149ms
+      - 🇺🇸_美国 (16) - 184ms
+      - 🇺🇸_美国 (12) - 142ms
+      - 🇺🇸_美国 (27) - 186ms
+      - 🇺🇸_美国 (38) - 174ms
+      - 🇺🇸_美国 - 188ms
+      - United+States - 43ms
+      - États+Unis - 45ms
+      - "🇵🇱[www.v2nodes.com] vless-PL-1... #6 - 114ms"
+      - 🇸🇬[www.v2nodes.com] vless-SG - 106ms
+      - "🇸🇬[www.v2nodes.com] vless-SG-9... #1 - 109ms"
+      - 🇨🇦[www.v2nodes.com] ss-CA-1557... - 210ms
+      - 🇬🇧[www.v2nodes.com] ss-GB-1451... - 349ms
+      - 🇺🇸US_8|2.2MB/s - 114ms
+      - "United States/San Francisco [TG] #2 - 132ms"
+      - "United States/San Francisco [TG] #6 - 118ms"
+      - 🇸🇬[www.v2nodes.com] vless-SG - 130ms
+      - "🇸🇬[www.v2nodes.com] vless-SG #1 - 110ms"
+      - 🇲🇽MX_1|1.0MB/s - 332ms
 rules:
   - MATCH,Proxy

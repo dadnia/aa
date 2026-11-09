@@ -5,7 +5,85 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - name: 瑞典+V2CROSS.COM - 122ms
+  - name: 未知 SS-02 | free-nodes - 330ms
+    server: 202.50.253.45
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 未知 SS-03 | free-nodes - 330ms
+    server: 202.50.253.36
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 未知 SS-04 | free-nodes - 329ms
+    server: 202.50.253.90
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 未知 SS-05 | free-nodes - 333ms
+    server: 202.50.253.27
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 未知 SS-06 | free-nodes - 333ms
+    server: 202.50.253.63
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 未知 SS-07 | free-nodes - 338ms
+    server: 202.50.253.54
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 未知 SS-08 | free-nodes - 328ms
+    server: 202.50.253.72
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 未知 SS-09 | free-nodes - 331ms
+    server: 202.50.253.99
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 未知 SS-10 | free-nodes - 331ms
+    server: 202.50.253.81
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (24) - 162ms
+    server: 216.24.57.40
+    port: 8880
+    udp: true
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: 216.24.57.40
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime28.workers.dev
+  - name: 瑞典+V2CROSS.COM - 273ms
     server: 167.88.61.175
     port: 443
     udp: true
@@ -14,14 +92,179 @@ proxies:
     sni: blog.browseseniorrolesandenhanceyourcareertoday.com
     network: tcp
     skip-cert-verify: true
-  - name: United+States - 63ms
-    server: 149.22.95.183
-    port: 443
+  - name: Canada - 306ms
+    server: 51.79.64.198
+    port: 8119
     udp: true
     type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: "🇺🇸 美国 | USA #6 - 338ms"
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
+  - name: United+Kingdom - 329ms
+    server: 82.38.31.202
+    port: 8080
+    udp: true
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+  - name: United+States - 81ms
+    server: 15.204.247.124
+    port: 2375
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: Niederlande - 299ms
+    server: 193.29.139.212
+    port: 8080
+    udp: true
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: QCXDxuDlTTMD7jtgHUjIoj
+  - name: United States - 67ms
+    server: 67.220.95.3
+    port: 18000
+    udp: true
+    type: vmess
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: raw
+    skip-cert-verify: true
+  - name: The+Netherlands - 304ms
+    server: 193.29.139.168
+    port: 8080
+    udp: true
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: QCXDxuDlTTMD7jtgHUjIoj
+  - name: United+States - 85ms
+    server: 15.204.246.132
+    port: 7307
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: Reino+Unido - 303ms
+    server: 82.38.31.218
+    port: 8080
+    udp: true
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+  - name: アメリカ - 84ms
+    server: 172.67.75.194
+    port: 2096
+    udp: true
+    type: vless
+    uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+    tls: true
+    servername: whitecreeper.pages.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /proxyip=ProxyIP.SG.CMLiussss.Net
+      headers:
+        Host: whitecreeper.pages.dev
+  - name: The+Netherlands - 300ms
+    server: 193.29.139.223
+    port: 8080
+    udp: true
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+  - name: 🇨🇦[www.v2nodes.com] vless-CA-1... - 84ms
+    server: 172.64.145.94
+    port: 443
+    udp: true
+    type: vless
+    uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+    tls: true
+    servername: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
+  - name: "🇨🇦[www.v2nodes.com] vless-CA-1... #2 - 101ms"
+    server: 188.114.98.0
+    port: 443
+    udp: true
+    type: vless
+    uuid: 341832cc-ba98-425b-8225-b3db621a0da3
+    tls: true
+    servername: rainfall0705.cc.cd
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: rainfall0705.cc.cd
+  - name: "🏳[www.v2nodes.com] vless- #1 - 336ms"
+    server: 138.124.70.41
+    port: 14430
+    udp: true
+    type: vless
+    uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+    tls: false
+    servername: 138.124.70.41
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /vless
+      headers:
+        Host: 138.124.70.41
+  - name: "🇭🇰[www.v2nodes.com] vless-HK-1... #4 - 62ms"
+    server: 188.114.97.6
+    port: 8080
+    udp: true
+    type: vless
+    uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
+    tls: false
+    servername: fornewiran.ade-1000.workers.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
+      headers:
+        Host: fornewiran.ade-1000.workers.dev
+  - name: "🇯🇵[www.v2nodes.com] vless-JP-1... #7 - 88ms"
+    server: 188.114.97.6
+    port: 443
+    udp: true
+    type: vless
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    tls: true
+    servername: nautica-cff.kloningstrife002.workers.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /138.2.74.219-28616
+      headers:
+        Host: nautica-cff.kloningstrife002.workers.dev
+  - name: 🇯🇵[www.v2nodes.com] vless-JP-4... - 185ms
+    server: 104.21.73.135
+    port: 443
+    udp: true
+    type: vless
+    uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
+    tls: true
+    servername: web-app-ji3j1z.app-wuuhuw.workers.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /api/ws
+      headers:
+        Host: web-app-ji3j1z.app-wuuhuw.workers.dev
+  - name: "🇺🇸[www.v2nodes.com] vless-US-1... #4 - 103ms"
     server: 146.75.57.7
     port: 443
     udp: true
@@ -36,42 +279,250 @@ proxies:
       path: /
       headers:
         Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
-  - name: 🇯🇵[www.v2nodes.com] ss-JP-5141... - 304ms
-    server: 149.22.87.204
+  - name: 🇦🇹[www.v2nodes.com] ss-AT-1595... - 346ms
+    server: 82.110.60.9
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇨🇦[www.v2nodes.com] ss-CA-1558... - 166ms
+    server: 51.222.200.165
+    port: 5000
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇨🇦[www.v2nodes.com] ss-CA-1557... - 337ms
+    server: 51.222.136.236
+    port: 8882
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+  - name: "🇨🇦[www.v2nodes.com] ss-CA-1545... #1 - 211ms"
+    server: 51.79.49.116
+    port: 8882
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+  - name: 🇨🇭[www.v2nodes.com] ss-CH-1616... - 326ms
+    server: 23.166.88.127
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇨🇭[www.v2nodes.com] ss-CH-1615... - 324ms
+    server: 186.190.215.251
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: "🇨🇭[www.v2nodes.com] ss-CH-1615... #1 - 313ms"
+    server: 79.127.184.104
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇩🇪[www.v2nodes.com] ss-DE-1616... - 289ms
+    server: 57.129.83.85
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇩🇪[www.v2nodes.com] ss-DE-1615... - 282ms
+    server: 193.108.119.3
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: "🇩🇪[www.v2nodes.com] ss-DE-1615... #1 - 280ms"
+    server: 23.157.88.43
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: "🇩🇪[www.v2nodes.com] ss-DE-1615... #2 - 280ms"
+    server: 193.108.119.2
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇫🇷[www.v2nodes.com] ss-FR-1616... - 318ms
+    server: 23.162.152.22
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇫🇷[www.v2nodes.com] ss-FR-1615... - 309ms
+    server: 38.109.228.110
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: "🇫🇷[www.v2nodes.com] ss-FR-1615... #2 - 305ms"
+    server: 172.99.189.142
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: "🇫🇷[www.v2nodes.com] ss-FR-1615... #4 - 298ms"
+    server: 167.17.64.22
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇬🇧[www.v2nodes.com] ss-GB-1616... - 259ms
+    server: 198.244.201.129
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: "🇬🇧[www.v2nodes.com] ss-GB-1616... #1 - 259ms"
+    server: 198.244.202.215
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇬🇧[www.v2nodes.com] ss-GB-1615... - 334ms
+    server: 142.202.51.22
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: "🇬🇧[www.v2nodes.com] ss-GB-1615... #1 - 282ms"
+    server: 38.114.120.221
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇬🇧[www.v2nodes.com] ss-GB-1602... - 285ms
+    server: 185.176.206.9
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇬🇧[www.v2nodes.com] ss-GB-1451... - 276ms
+    server: 158.173.24.73
     port: 443
     udp: true
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: 🇯🇵[www.v2nodes.com] ss-JP-1291... - 304ms
-    server: 149.22.87.240
+  - name: 🇬🇧[www.v2nodes.com] ss-GB-9184... - 328ms
+    server: 141.98.101.181
     port: 443
     udp: true
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: 🇯🇵[www.v2nodes.com] ss-JP-9223... - 301ms
-    server: 149.22.87.241
-    port: 443
+  - name: 🇮🇹[www.v2nodes.com] ss-IT-1616... - 350ms
+    server: 149.50.215.234
+    port: 19999
     udp: true
     type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇲🇽[www.v2nodes.com] ss-MX-1564... - 252ms
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇮🇹[www.v2nodes.com] ss-IT-1597... - 321ms
+    server: 185.164.175.81
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇲🇽[www.v2nodes.com] ss-MX-1564... - 196ms
     server: 64.177.90.30
     port: 8388
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: BWyPPTusFKhGgzKh
-  - name: "🇺🇸 美国 | USA #3 - 102ms"
-    server: 137.175.73.178
-    port: 35678
+  - name: 🇳🇱[www.v2nodes.com] ss-NL-1614... - 283ms
+    server: 151.241.19.36
+    port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
-    password: dongtaiwang.com
-  - name: United States/Santa Clara [GH:Mahdi0024/Pro] - 127ms
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: "🇳🇱[www.v2nodes.com] ss-NL-1614... #1 - 297ms"
+    server: 151.241.19.29
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇨🇦[www.v2nodes.com] trojan-CA-... - 171ms
+    server: ca001.zestapp778.com
+    port: 46977
+    udp: true
+    type: trojan
+    password: 5t6i121em5lkmsmk
+    sni: ca001.zestapp778.com
+    network: tcp
+    skip-cert-verify: true
+  - name: "🇨🇦[www.v2nodes.com] trojan-CA-... #1 - 126ms"
+    server: 216.152.147.201
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: resources.connectingpeoplewithgreatjobs.com
+    network: tcp
+    skip-cert-verify: true
+  - name: "🇨🇦[www.v2nodes.com] trojan-CA-... #7 - 126ms"
+    server: 216.152.147.152
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: 216.152.147.152
+    network: tcp
+    skip-cert-verify: true
+  - name: "🇨🇦[www.v2nodes.com] trojan-CA-... #3 - 128ms"
+    server: 216.152.147.93
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: connectingpeoplewithgreatjobs.com
+    network: tcp
+    skip-cert-verify: true
+  - name: "🇨🇦[www.v2nodes.com] trojan-CA-... #4 - 133ms"
+    server: 216.152.147.79
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: 216.152.147.79
+    network: tcp
+    skip-cert-verify: true
+  - name: "🇨🇦[www.v2nodes.com] trojan-CA-... #5 - 123ms"
+    server: 216.152.147.85
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: 216.152.147.85
+    network: tcp
+    skip-cert-verify: true
+  - name: United States/Santa Clara [GH:Mahdi0024/Pro] - 275ms
     server: 167.88.61.20
     port: 443
     udp: true
@@ -80,7 +531,7 @@ proxies:
     sni: api.browseseniorrolesandenhanceyourcareertoday.com
     network: tcp
     skip-cert-verify: true
-  - name: United States/Miami [TG] - 315ms
+  - name: United States/Miami [TG] - 123ms
     server: 169.197.140.171
     port: 443
     udp: true
@@ -89,7 +540,16 @@ proxies:
     sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
     network: tcp
     skip-cert-verify: true
-  - name: United States/Seattle [TG] - 32ms
+  - name: Canada/Toronto [TG] - 124ms
+    server: 216.152.147.74
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: api.connectingpeoplewithgreatjobs.com
+    network: tcp
+    skip-cert-verify: true
+  - name: United States/Seattle [TG] - 275ms
     server: 216.106.186.46
     port: 443
     udp: true
@@ -98,7 +558,7 @@ proxies:
     sni: cdn.findlocaljobnetworkandbuildcommunityconnections.com
     network: tcp
     skip-cert-verify: true
-  - name: "United States/Santa Clara [GH:Mahdi0024/Pro] #2 - 127ms"
+  - name: "United States/Santa Clara [GH:Mahdi0024/Pro] #2 - 340ms"
     server: 167.88.61.52
     port: 443
     udp: true
@@ -107,7 +567,7 @@ proxies:
     sni: courses.browseseniorrolesandenhanceyourcareertoday.com
     network: tcp
     skip-cert-verify: true
-  - name: United States/Phoenix [TG] - 157ms
+  - name: United States/Phoenix [TG] - 216ms
     server: 66.163.112.13
     port: 443
     udp: true
@@ -116,7 +576,7 @@ proxies:
     sni: blog.unlockyourfuturefindyourperfectcareer.com
     network: tcp
     skip-cert-verify: true
-  - name: "United States/Phoenix [TG] #2 - 170ms"
+  - name: "United States/Phoenix [TG] #2 - 233ms"
     server: 66.163.112.121
     port: 443
     udp: true
@@ -125,7 +585,14 @@ proxies:
     sni: www.unlockyourfuturefindyourperfectcareer.com
     network: tcp
     skip-cert-verify: true
-  - name: "United States/Phoenix [TG] #3 - 157ms"
+  - name: United States/Staten Island [GH:barry-far/V2r] - 86ms
+    server: 198.98.53.130
+    port: 443
+    udp: true
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: eDfN7SODQceIOmIAbtJJtK
+  - name: "United States/Phoenix [TG] #3 - 214ms"
     server: 66.163.112.31
     port: 443
     udp: true
@@ -134,169 +601,346 @@ proxies:
     sni: unlockyourfuturefindyourperfectcareer.com
     network: tcp
     skip-cert-verify: true
-  - name: United States/Dallas [TG] - 158ms
+  - name: United States/Dallas [TG] - 113ms
     server: 156.146.38.167
     port: 443
     udp: true
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: "United States/Dallas [TG] #2 - 169ms"
+  - name: "United States/Dallas [TG] #2 - 114ms"
     server: 156.146.38.168
     port: 443
     udp: true
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: "United States/Atlanta [TG] #2 - 220ms"
+  - name: United Kingdom [TG] - 304ms
+    server: 82.38.31.193
+    port: 8080
+    udp: true
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+  - name: Germany/Frankfurt am Main [TG] - 280ms
+    server: 185.176.204.18
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: France [TG] - 303ms
+    server: 79.137.99.183
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: "United States/Atlanta [TG] #2 - 102ms"
     server: 185.215.132.9
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸[www.v2nodes.com] ss-US-1616... - 230ms
+  - name: "🇨🇦[www.v2nodes.com] trojan-CA-... #1 - 124ms"
+    server: 216.152.147.48
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: 216.152.147.48
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇸🇬 新加坡 | SGP 6 - 138ms
+    server: 104.18.35.86
+    port: 2096
+    udp: true
+    type: trojan
+    password: "123456"
+    sni: 321dfbc6.uir-9i6.pages.dev
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: 321dfbc6.uir-9i6.pages.dev
+  - name: "Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NETfp=unsafe&security=tls#🇨🇦[www.v2nodes.com] vless-CA-1... #2 - 111ms"
+    server: 172.67.141.182
+    port: 443
+    udp: true
+    type: vless
+    uuid: ce440dcf-e570-4a50-af37-bf588ee8a988
+    tls: true
+    servername: 6qwoom7kdrcoan3ui4ra5dy.pages.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /vl/KSPdmco70dfoXFS292o2Nv6yPt?ed=2560
+      headers:
+        Host: 6qwoom7kdrcoan3ui4ra5dy.pages.dev
+  - name: "🏳[www.v2nodes.com] ss- #2 - 99ms"
     server: 149.40.57.134
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1616... #2 - 233ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1616... #1 - 128ms"
     server: 38.91.107.188
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1616... #3 - 99ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1616... #2 - 185ms"
     server: 38.145.220.193
     port: 8443
     udp: true
     type: ss
     cipher: 2022-blake3-aes-128-gcm
     password: jUbDNsFamcyDfpm+rI3Zyw==
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1616... #4 - 109ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1616... #3 - 209ms"
     server: 23.150.152.38
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1616... #5 - 140ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1616... #4 - 106ms"
     server: 167.88.62.203
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1616... #5 - 219ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1616... #5 - 107ms"
     server: 167.88.63.99
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1616... #6 - 221ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1616... #6 - 104ms"
     server: 38.121.43.231
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸[www.v2nodes.com] ss-US-1615... - 228ms
+  - name: 🇺🇸[www.v2nodes.com] ss-US-1615... - 91ms
     server: 149.40.57.138
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #1 - 219ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #1 - 107ms"
     server: 38.121.43.225
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #2 - 222ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #2 - 107ms"
     server: 38.22.17.219
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #3 - 224ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #3 - 98ms"
     server: 149.40.57.133
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #4 - 161ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #4 - 84ms"
     server: 216.106.178.169
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #5 - 90ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #5 - 219ms"
     server: 169.197.142.68
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #6 - 249ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #6 - 96ms"
     server: 162.251.62.31
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #7 - 221ms"
+  - name: "🇺🇸[www.v2nodes.com] ss-US-1615... #7 - 104ms"
     server: 38.121.43.18
     port: 19999
     udp: true
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: "🇨🇦[www.v2nodes.com] trojan-CA-... #2 - 124ms"
+    server: 216.152.147.89
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: 216.152.147.89
+    network: tcp
+    skip-cert-verify: true
+  - name: "🇨🇦[www.v2nodes.com] vless-CA-1... #2 - 115ms"
+    server: 172.67.74.90
+    port: 443
+    udp: true
+    type: vless
+    uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+    tls: true
+    servername: cvhpyn.pages.dev
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: cvhpyn.pages.dev
+  - name: "🇺🇸 美国 | USA #13 - 104ms"
+    server: 104.18.41.145
+    port: 8080
+    udp: true
+    type: vless
+    uuid: c4940726-7300-46f8-a8ce-925c2b2d6612
+    tls: false
+    servername: 104.18.41.145
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: qgJdrswc-8hh1pa.qgjdRswc.woRkers.deV
+  - name: "🇺🇸 美国 | USA #17 - 109ms"
+    server: www.buydomains.com
+    port: 443
+    udp: true
+    type: vless
+    uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
+    tls: true
+    servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+    network: ws
+    flow: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
+      headers:
+        Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
 proxy-groups:
   - name: Auto Select
     type: url-test
     proxies:
-      - 瑞典+V2CROSS.COM - 122ms
-      - United+States - 63ms
-      - "🇺🇸 美国 | USA #6 - 338ms"
-      - 🇯🇵[www.v2nodes.com] ss-JP-5141... - 304ms
-      - 🇯🇵[www.v2nodes.com] ss-JP-1291... - 304ms
-      - 🇯🇵[www.v2nodes.com] ss-JP-9223... - 301ms
-      - 🇲🇽[www.v2nodes.com] ss-MX-1564... - 252ms
-      - "🇺🇸 美国 | USA #3 - 102ms"
-      - United States/Santa Clara [GH:Mahdi0024/Pro] - 127ms
-      - United States/Miami [TG] - 315ms
-      - United States/Seattle [TG] - 32ms
-      - "United States/Santa Clara [GH:Mahdi0024/Pro] #2 - 127ms"
-      - United States/Phoenix [TG] - 157ms
-      - "United States/Phoenix [TG] #2 - 170ms"
-      - "United States/Phoenix [TG] #3 - 157ms"
-      - United States/Dallas [TG] - 158ms
-      - "United States/Dallas [TG] #2 - 169ms"
-      - "United States/Atlanta [TG] #2 - 220ms"
-      - 🇺🇸[www.v2nodes.com] ss-US-1616... - 230ms
-      - "🇺🇸[www.v2nodes.com] ss-US-1616... #2 - 233ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1616... #3 - 99ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1616... #4 - 109ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1616... #5 - 140ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1616... #5 - 219ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1616... #6 - 221ms"
-      - 🇺🇸[www.v2nodes.com] ss-US-1615... - 228ms
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #1 - 219ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #2 - 222ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #3 - 224ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #4 - 161ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #5 - 90ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #6 - 249ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #7 - 221ms"
+      - 未知 SS-02 | free-nodes - 330ms
+      - 未知 SS-03 | free-nodes - 330ms
+      - 未知 SS-04 | free-nodes - 329ms
+      - 未知 SS-05 | free-nodes - 333ms
+      - 未知 SS-06 | free-nodes - 333ms
+      - 未知 SS-07 | free-nodes - 338ms
+      - 未知 SS-08 | free-nodes - 328ms
+      - 未知 SS-09 | free-nodes - 331ms
+      - 未知 SS-10 | free-nodes - 331ms
+      - 🇺🇸_美国 (24) - 162ms
+      - 瑞典+V2CROSS.COM - 273ms
+      - Canada - 306ms
+      - United+Kingdom - 329ms
+      - United+States - 81ms
+      - Niederlande - 299ms
+      - United States - 67ms
+      - The+Netherlands - 304ms
+      - United+States - 85ms
+      - Reino+Unido - 303ms
+      - アメリカ - 84ms
+      - The+Netherlands - 300ms
+      - 🇨🇦[www.v2nodes.com] vless-CA-1... - 84ms
+      - "🇨🇦[www.v2nodes.com] vless-CA-1... #2 - 101ms"
+      - "🏳[www.v2nodes.com] vless- #1 - 336ms"
+      - "🇭🇰[www.v2nodes.com] vless-HK-1... #4 - 62ms"
+      - "🇯🇵[www.v2nodes.com] vless-JP-1... #7 - 88ms"
+      - 🇯🇵[www.v2nodes.com] vless-JP-4... - 185ms
+      - "🇺🇸[www.v2nodes.com] vless-US-1... #4 - 103ms"
+      - 🇦🇹[www.v2nodes.com] ss-AT-1595... - 346ms
+      - 🇨🇦[www.v2nodes.com] ss-CA-1558... - 166ms
+      - 🇨🇦[www.v2nodes.com] ss-CA-1557... - 337ms
+      - "🇨🇦[www.v2nodes.com] ss-CA-1545... #1 - 211ms"
+      - 🇨🇭[www.v2nodes.com] ss-CH-1616... - 326ms
+      - 🇨🇭[www.v2nodes.com] ss-CH-1615... - 324ms
+      - "🇨🇭[www.v2nodes.com] ss-CH-1615... #1 - 313ms"
+      - 🇩🇪[www.v2nodes.com] ss-DE-1616... - 289ms
+      - 🇩🇪[www.v2nodes.com] ss-DE-1615... - 282ms
+      - "🇩🇪[www.v2nodes.com] ss-DE-1615... #1 - 280ms"
+      - "🇩🇪[www.v2nodes.com] ss-DE-1615... #2 - 280ms"
+      - 🇫🇷[www.v2nodes.com] ss-FR-1616... - 318ms
+      - 🇫🇷[www.v2nodes.com] ss-FR-1615... - 309ms
+      - "🇫🇷[www.v2nodes.com] ss-FR-1615... #2 - 305ms"
+      - "🇫🇷[www.v2nodes.com] ss-FR-1615... #4 - 298ms"
+      - 🇬🇧[www.v2nodes.com] ss-GB-1616... - 259ms
+      - "🇬🇧[www.v2nodes.com] ss-GB-1616... #1 - 259ms"
+      - 🇬🇧[www.v2nodes.com] ss-GB-1615... - 334ms
+      - "🇬🇧[www.v2nodes.com] ss-GB-1615... #1 - 282ms"
+      - 🇬🇧[www.v2nodes.com] ss-GB-1602... - 285ms
+      - 🇬🇧[www.v2nodes.com] ss-GB-1451... - 276ms
+      - 🇬🇧[www.v2nodes.com] ss-GB-9184... - 328ms
+      - 🇮🇹[www.v2nodes.com] ss-IT-1616... - 350ms
+      - 🇮🇹[www.v2nodes.com] ss-IT-1597... - 321ms
+      - 🇲🇽[www.v2nodes.com] ss-MX-1564... - 196ms
+      - 🇳🇱[www.v2nodes.com] ss-NL-1614... - 283ms
+      - "🇳🇱[www.v2nodes.com] ss-NL-1614... #1 - 297ms"
+      - 🇨🇦[www.v2nodes.com] trojan-CA-... - 171ms
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #1 - 126ms"
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #7 - 126ms"
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #3 - 128ms"
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #4 - 133ms"
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #5 - 123ms"
+      - United States/Santa Clara [GH:Mahdi0024/Pro] - 275ms
+      - United States/Miami [TG] - 123ms
+      - Canada/Toronto [TG] - 124ms
+      - United States/Seattle [TG] - 275ms
+      - "United States/Santa Clara [GH:Mahdi0024/Pro] #2 - 340ms"
+      - United States/Phoenix [TG] - 216ms
+      - "United States/Phoenix [TG] #2 - 233ms"
+      - United States/Staten Island [GH:barry-far/V2r] - 86ms
+      - "United States/Phoenix [TG] #3 - 214ms"
+      - United States/Dallas [TG] - 113ms
+      - "United States/Dallas [TG] #2 - 114ms"
+      - United Kingdom [TG] - 304ms
+      - Germany/Frankfurt am Main [TG] - 280ms
+      - France [TG] - 303ms
+      - "United States/Atlanta [TG] #2 - 102ms"
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #1 - 124ms"
+      - 🇸🇬 新加坡 | SGP 6 - 138ms
+      - "Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NETfp=unsafe&security=tls#🇨🇦[www.v2nodes.com] vless-CA-1... #2 - 111ms"
+      - "🏳[www.v2nodes.com] ss- #2 - 99ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1616... #1 - 128ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1616... #2 - 185ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1616... #3 - 209ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1616... #4 - 106ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1616... #5 - 107ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1616... #6 - 104ms"
+      - 🇺🇸[www.v2nodes.com] ss-US-1615... - 91ms
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #1 - 107ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #2 - 107ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #3 - 98ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #4 - 84ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #5 - 219ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #6 - 96ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #7 - 104ms"
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #2 - 124ms"
+      - "🇨🇦[www.v2nodes.com] vless-CA-1... #2 - 115ms"
+      - "🇺🇸 美国 | USA #13 - 104ms"
+      - "🇺🇸 美国 | USA #17 - 109ms"
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -304,38 +948,103 @@ proxy-groups:
     type: select
     proxies:
       - Auto Select
-      - 瑞典+V2CROSS.COM - 122ms
-      - United+States - 63ms
-      - "🇺🇸 美国 | USA #6 - 338ms"
-      - 🇯🇵[www.v2nodes.com] ss-JP-5141... - 304ms
-      - 🇯🇵[www.v2nodes.com] ss-JP-1291... - 304ms
-      - 🇯🇵[www.v2nodes.com] ss-JP-9223... - 301ms
-      - 🇲🇽[www.v2nodes.com] ss-MX-1564... - 252ms
-      - "🇺🇸 美国 | USA #3 - 102ms"
-      - United States/Santa Clara [GH:Mahdi0024/Pro] - 127ms
-      - United States/Miami [TG] - 315ms
-      - United States/Seattle [TG] - 32ms
-      - "United States/Santa Clara [GH:Mahdi0024/Pro] #2 - 127ms"
-      - United States/Phoenix [TG] - 157ms
-      - "United States/Phoenix [TG] #2 - 170ms"
-      - "United States/Phoenix [TG] #3 - 157ms"
-      - United States/Dallas [TG] - 158ms
-      - "United States/Dallas [TG] #2 - 169ms"
-      - "United States/Atlanta [TG] #2 - 220ms"
-      - 🇺🇸[www.v2nodes.com] ss-US-1616... - 230ms
-      - "🇺🇸[www.v2nodes.com] ss-US-1616... #2 - 233ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1616... #3 - 99ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1616... #4 - 109ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1616... #5 - 140ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1616... #5 - 219ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1616... #6 - 221ms"
-      - 🇺🇸[www.v2nodes.com] ss-US-1615... - 228ms
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #1 - 219ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #2 - 222ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #3 - 224ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #4 - 161ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #5 - 90ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #6 - 249ms"
-      - "🇺🇸[www.v2nodes.com] ss-US-1615... #7 - 221ms"
+      - 未知 SS-02 | free-nodes - 330ms
+      - 未知 SS-03 | free-nodes - 330ms
+      - 未知 SS-04 | free-nodes - 329ms
+      - 未知 SS-05 | free-nodes - 333ms
+      - 未知 SS-06 | free-nodes - 333ms
+      - 未知 SS-07 | free-nodes - 338ms
+      - 未知 SS-08 | free-nodes - 328ms
+      - 未知 SS-09 | free-nodes - 331ms
+      - 未知 SS-10 | free-nodes - 331ms
+      - 🇺🇸_美国 (24) - 162ms
+      - 瑞典+V2CROSS.COM - 273ms
+      - Canada - 306ms
+      - United+Kingdom - 329ms
+      - United+States - 81ms
+      - Niederlande - 299ms
+      - United States - 67ms
+      - The+Netherlands - 304ms
+      - United+States - 85ms
+      - Reino+Unido - 303ms
+      - アメリカ - 84ms
+      - The+Netherlands - 300ms
+      - 🇨🇦[www.v2nodes.com] vless-CA-1... - 84ms
+      - "🇨🇦[www.v2nodes.com] vless-CA-1... #2 - 101ms"
+      - "🏳[www.v2nodes.com] vless- #1 - 336ms"
+      - "🇭🇰[www.v2nodes.com] vless-HK-1... #4 - 62ms"
+      - "🇯🇵[www.v2nodes.com] vless-JP-1... #7 - 88ms"
+      - 🇯🇵[www.v2nodes.com] vless-JP-4... - 185ms
+      - "🇺🇸[www.v2nodes.com] vless-US-1... #4 - 103ms"
+      - 🇦🇹[www.v2nodes.com] ss-AT-1595... - 346ms
+      - 🇨🇦[www.v2nodes.com] ss-CA-1558... - 166ms
+      - 🇨🇦[www.v2nodes.com] ss-CA-1557... - 337ms
+      - "🇨🇦[www.v2nodes.com] ss-CA-1545... #1 - 211ms"
+      - 🇨🇭[www.v2nodes.com] ss-CH-1616... - 326ms
+      - 🇨🇭[www.v2nodes.com] ss-CH-1615... - 324ms
+      - "🇨🇭[www.v2nodes.com] ss-CH-1615... #1 - 313ms"
+      - 🇩🇪[www.v2nodes.com] ss-DE-1616... - 289ms
+      - 🇩🇪[www.v2nodes.com] ss-DE-1615... - 282ms
+      - "🇩🇪[www.v2nodes.com] ss-DE-1615... #1 - 280ms"
+      - "🇩🇪[www.v2nodes.com] ss-DE-1615... #2 - 280ms"
+      - 🇫🇷[www.v2nodes.com] ss-FR-1616... - 318ms
+      - 🇫🇷[www.v2nodes.com] ss-FR-1615... - 309ms
+      - "🇫🇷[www.v2nodes.com] ss-FR-1615... #2 - 305ms"
+      - "🇫🇷[www.v2nodes.com] ss-FR-1615... #4 - 298ms"
+      - 🇬🇧[www.v2nodes.com] ss-GB-1616... - 259ms
+      - "🇬🇧[www.v2nodes.com] ss-GB-1616... #1 - 259ms"
+      - 🇬🇧[www.v2nodes.com] ss-GB-1615... - 334ms
+      - "🇬🇧[www.v2nodes.com] ss-GB-1615... #1 - 282ms"
+      - 🇬🇧[www.v2nodes.com] ss-GB-1602... - 285ms
+      - 🇬🇧[www.v2nodes.com] ss-GB-1451... - 276ms
+      - 🇬🇧[www.v2nodes.com] ss-GB-9184... - 328ms
+      - 🇮🇹[www.v2nodes.com] ss-IT-1616... - 350ms
+      - 🇮🇹[www.v2nodes.com] ss-IT-1597... - 321ms
+      - 🇲🇽[www.v2nodes.com] ss-MX-1564... - 196ms
+      - 🇳🇱[www.v2nodes.com] ss-NL-1614... - 283ms
+      - "🇳🇱[www.v2nodes.com] ss-NL-1614... #1 - 297ms"
+      - 🇨🇦[www.v2nodes.com] trojan-CA-... - 171ms
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #1 - 126ms"
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #7 - 126ms"
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #3 - 128ms"
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #4 - 133ms"
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #5 - 123ms"
+      - United States/Santa Clara [GH:Mahdi0024/Pro] - 275ms
+      - United States/Miami [TG] - 123ms
+      - Canada/Toronto [TG] - 124ms
+      - United States/Seattle [TG] - 275ms
+      - "United States/Santa Clara [GH:Mahdi0024/Pro] #2 - 340ms"
+      - United States/Phoenix [TG] - 216ms
+      - "United States/Phoenix [TG] #2 - 233ms"
+      - United States/Staten Island [GH:barry-far/V2r] - 86ms
+      - "United States/Phoenix [TG] #3 - 214ms"
+      - United States/Dallas [TG] - 113ms
+      - "United States/Dallas [TG] #2 - 114ms"
+      - United Kingdom [TG] - 304ms
+      - Germany/Frankfurt am Main [TG] - 280ms
+      - France [TG] - 303ms
+      - "United States/Atlanta [TG] #2 - 102ms"
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #1 - 124ms"
+      - 🇸🇬 新加坡 | SGP 6 - 138ms
+      - "Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NETfp=unsafe&security=tls#🇨🇦[www.v2nodes.com] vless-CA-1... #2 - 111ms"
+      - "🏳[www.v2nodes.com] ss- #2 - 99ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1616... #1 - 128ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1616... #2 - 185ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1616... #3 - 209ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1616... #4 - 106ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1616... #5 - 107ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1616... #6 - 104ms"
+      - 🇺🇸[www.v2nodes.com] ss-US-1615... - 91ms
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #1 - 107ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #2 - 107ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #3 - 98ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #4 - 84ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #5 - 219ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #6 - 96ms"
+      - "🇺🇸[www.v2nodes.com] ss-US-1615... #7 - 104ms"
+      - "🇨🇦[www.v2nodes.com] trojan-CA-... #2 - 124ms"
+      - "🇨🇦[www.v2nodes.com] vless-CA-1... #2 - 115ms"
+      - "🇺🇸 美国 | USA #13 - 104ms"
+      - "🇺🇸 美国 | USA #17 - 109ms"
 rules:
   - MATCH,Proxy

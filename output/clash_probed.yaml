@@ -5,7 +5,7 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - name: SG VLESS-11 | free-nodes - 99ms
+  - name: SG VLESS-11 | free-nodes - 95ms
     server: 172.64.154.113
     port: 8443
     udp: true
@@ -20,7 +20,7 @@ proxies:
       path: /proxyip=ProxyIP.JP.CMLiussss.net
       headers:
         Host: freeceshi6.frii.site
-  - name: US VMESS-13 | free-nodes - 132ms
+  - name: US VMESS-13 | free-nodes - 119ms
     server: 192.74.236.148
     port: 30004
     udp: true
@@ -35,395 +35,7 @@ proxies:
       path: /path/1733477783705
       headers:
         Host: www.91334565.xyz
-  - name: 🇯🇵_日本 (4) - 323ms
-    server: 149.22.87.241
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇯🇵_日本 (5) - 325ms
-    server: 149.22.87.204
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇯🇵_日本 (6) - 341ms
-    server: jpa.123069.xyz
-    port: 53758
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: Bwlqh7GcFB
-  - name: 🇯🇵_日本 (9) - 322ms
-    server: 149.22.87.240
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇯🇵_日本 (12) - 326ms
-    server: 168.138.205.100
-    port: 53758
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: Bwlqh7GcFB
-  - name: 🇺🇸_美国 (9) - 36ms
-    server: 169.197.142.68
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (10) - 94ms
-    server: 95.215.201.18
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (11) - 79ms
-    server: 173.244.56.6
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇺🇸_美国 (12) - 45ms
-    server: 104.238.140.45
-    port: 11051
-    udp: true
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: JUXsy78dSs6ROkasikmoaL
-  - name: 🇨🇦_加拿大 - 90ms
-    server: 149.22.95.183
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇺🇸_美国 (19) - 84ms
-    server: 173.244.56.9
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇺🇸_美国 (22) - 137ms
-    server: 167.88.62.56
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (24) - 142ms
-    server: 167.88.62.203
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (27) - 204ms
-    server: 216.106.178.169
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (33) - 132ms
-    server: 156.146.38.170
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇺🇸_美国 (34) - 143ms
-    server: 156.146.38.168
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇺🇸_美国 (35) - 219ms
-    server: 38.128.66.32
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (38) - 196ms
-    server: 149.40.57.138
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (39) - 228ms
-    server: 37.19.198.244
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇺🇸_美国 (40) - 140ms
-    server: 156.146.38.169
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇺🇸_美国 (42) - 217ms
-    server: 37.19.198.243
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇺🇸_美国 (43) - 249ms
-    server: 37.19.198.160
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇺🇸_美国 (45) - 170ms
-    server: 149.40.57.134
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (46) - 221ms
-    server: 38.91.100.39
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (47) - 182ms
-    server: 149.40.57.133
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (49) - 171ms
-    server: 149.40.57.135
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (54) - 204ms
-    server: 193.151.163.18
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (56) - 219ms
-    server: 37.19.198.236
-    port: 443
-    udp: true
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: 🇺🇸_美国 (57) - 299ms
-    server: 38.121.43.225
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (58) - 310ms
-    server: 38.22.17.214
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (59) - 308ms
-    server: 38.121.43.18
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (61) - 301ms
-    server: 167.88.63.99
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (63) - 271ms
-    server: 185.215.132.9
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (64) - 295ms
-    server: 38.121.43.231
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (66) - 243ms
-    server: 45.86.51.18
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (67) - 252ms
-    server: 185.230.230.18
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (69) - 239ms
-    server: 172.111.38.72
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (70) - 319ms
-    server: 167.88.63.39
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (71) - 311ms
-    server: 38.22.17.129
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (72) - 269ms
-    server: 185.215.132.18
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (73) - 327ms
-    server: 172.111.36.123
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (74) - 308ms
-    server: 38.22.17.139
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇨🇦_加拿大 (3) - 250ms
-    server: 51.222.12.127
-    port: 445
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: zDNVedRFPQexG9v
-  - name: 🇺🇸_美国 (75) - 301ms
-    server: 38.22.17.219
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (80) - 331ms
-    server: 193.151.160.9
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (81) - 329ms
-    server: 193.151.160.18
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (84) - 227ms
-    server: 15.204.247.206
-    port: 4444
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 🇺🇸_美国 (85) - 345ms
-    server: 66.163.125.120
-    port: 19999
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  - name: 🇺🇸_美国 (86) - 296ms
-    server: 15.204.246.132
-    port: 7307
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇺🇸_美国 (89) - 230ms
-    server: 15.204.246.111
-    port: 5498
-    udp: true
-    type: ss
-    cipher: aes-256-gcm
-    password: lGqs95QkFHo2NV
-  - name: 🇺🇸_美国 (13) - 245ms
-    server: www.findlocaljobnetworkandbuildcommunityconnections.com
-    port: 443
-    udp: true
-    type: trojan
-    password: 242a3d8eee5e4ed1a6bfa4141d549a25
-    sni: www.findlocaljobnetworkandbuildcommunityconnections.com
-    network: tcp
-    skip-cert-verify: true
-  - name: 🇺🇸_美国 (14) - 235ms
-    server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-    port: 443
-    udp: true
-    type: trojan
-    password: f0eb8c92ce8946aaba856569cff1a16b
-    sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-    network: tcp
-    skip-cert-verify: true
-  - name: 🇺🇸_美国 (16) - 40ms
-    server: 167.88.61.175
-    port: 443
-    udp: true
-    type: trojan
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: blog.browseseniorrolesandenhanceyourcareertoday.com
-    network: tcp
-    skip-cert-verify: true
-  - name: 🇺🇸_美国 (60) - 242ms
-    server: 67.220.95.3
-    port: 18000
-    udp: true
-    type: vmess
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    skip-cert-verify: true
-  - name: 🇺🇸_美国 (21) - 141ms
+  - name: 🇺🇸_美国 (176) - 119ms
     server: 38.11.69.48
     port: 30004
     udp: true
@@ -438,15 +50,593 @@ proxies:
       path: /path/1698843555400
       headers:
         Host: www.83761815.xyz
-  - name: 🇺🇸 美国 | USA 2 - 185ms
+  - name: 🇯🇵_日本 (10) - 349ms
+    server: 64.176.34.102
+    port: 46130
+    udp: true
+    type: vmess
+    uuid: 477350b2-7536-4f38-ee21-020efdde2d1d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (78) - 88ms
+    server: 84.17.41.2
+    port: 18000
+    udp: true
+    type: vmess
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇭🇰_香港 (9) - 43ms
+    server: 206.237.11.17
+    port: 50376
+    udp: true
+    type: vmess
+    uuid: 9091fd64-7e8e-4b7a-8ae7-84474f234926
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (81) - 280ms
+    server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+    port: 443
+    udp: true
+    type: trojan
+    password: f0eb8c92ce8946aaba856569cff1a16b
+    sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (83) - 32ms
+    server: 169.197.142.22
+    port: 18000
+    udp: true
+    type: vmess
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (88) - 37ms
+    server: 167.88.61.20
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: api.browseseniorrolesandenhanceyourcareertoday.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (90) - 63ms
+    server: kuruish.org
+    port: 443
+    udp: true
+    type: vless
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    tls: true
+    servername: kuruish.org
+    network: tcp
+    flow: ""
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (91) - 221ms
+    server: 216.106.186.66
+    port: 443
+    udp: true
+    type: trojan
+    password: 242a3d8eee5e4ed1a6bfa4141d549a25
+    sni: www.findlocaljobnetworkandbuildcommunityconnections.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (92) - 40ms
+    server: 167.88.61.52
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: courses.browseseniorrolesandenhanceyourcareertoday.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (94) - 41ms
+    server: 167.88.61.175
+    port: 443
+    udp: true
+    type: trojan
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    sni: blog.browseseniorrolesandenhanceyourcareertoday.com
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (113) - 210ms
+    server: 67.220.85.46
+    port: 18000
+    udp: true
+    type: vmess
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇨🇦_加拿大 (13) - 214ms
+    server: 23.162.200.198
+    port: 18000
+    udp: true
+    type: vmess
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇨🇦_加拿大 (17) - 206ms
+    server: 134.195.196.211
+    port: 18000
+    udp: true
+    type: vmess
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (120) - 277ms
+    server: 69.164.240.85
+    port: 50875
+    udp: true
+    type: trojan
+    password: nwilryafgkyvuxauc8pz
+    sni: 69.164.240.85
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (122) - 179ms
+    server: 38.68.135.131
+    port: 1270
+    udp: true
+    type: vmess
+    uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇺🇸_美国 (124) - 241ms
+    server: 67.220.95.3
+    port: 18000
+    udp: true
+    type: vmess
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+    skip-cert-verify: true
+  - name: 🇯🇵_日本 - 343ms
+    server: jpa.123069.xyz
+    port: 53758
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: Bwlqh7GcFB
+  - name: 🇯🇵_日本 (2) - 322ms
+    server: 149.22.87.204
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇯🇵_日本 (3) - 324ms
+    server: 168.138.205.100
+    port: 53758
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: Bwlqh7GcFB
+  - name: 🇯🇵_日本 (4) - 325ms
+    server: 149.22.87.241
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇯🇵_日本 (5) - 323ms
+    server: 149.22.87.240
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇺🇸_美国 - 78ms
+    server: 38.143.66.146
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (2) - 27ms
+    server: 169.197.142.68
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (3) - 77ms
+    server: 173.244.56.6
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇺🇸_美国 (4) - 82ms
+    server: 173.244.56.9
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇺🇸_美国 (5) - 66ms
+    server: 95.215.201.18
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (6) - 41ms
+    server: 23.150.152.38
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇨🇦_加拿大 - 95ms
+    server: 149.22.95.183
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇺🇸_美国 (7) - 131ms
+    server: 167.88.62.203
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (8) - 144ms
+    server: 156.146.38.170
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇺🇸_美国 (10) - 216ms
+    server: 198.98.53.130
+    port: 443
+    udp: true
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: eDfN7SODQceIOmIAbtJJtK
+  - name: 🇺🇸_美国 (11) - 176ms
+    server: 216.106.178.169
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (12) - 178ms
+    server: 38.128.66.32
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (13) - 139ms
+    server: 167.88.62.56
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (14) - 179ms
+    server: 67.220.73.178
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (15) - 216ms
+    server: 37.19.198.160
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇺🇸_美国 (16) - 206ms
+    server: 37.19.198.243
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇺🇸_美国 (17) - 226ms
+    server: 200.102.179.179
+    port: 8388
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: itzvpn@321
+  - name: 🇺🇸_美国 (19) - 228ms
+    server: 37.19.198.236
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇺🇸_美国 (20) - 171ms
+    server: 149.40.57.138
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (21) - 210ms
+    server: 37.19.198.244
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇺🇸_美国 (23) - 168ms
+    server: 149.40.57.134
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (24) - 318ms
+    server: 185.215.132.18
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (25) - 171ms
+    server: 149.40.57.133
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (27) - 314ms
+    server: 38.22.17.129
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (28) - 123ms
+    server: 156.146.38.169
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇺🇸_美国 (29) - 128ms
+    server: 156.146.38.168
+    port: 443
+    udp: true
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 🇺🇸_美国 (30) - 246ms
+    server: 185.230.230.18
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (31) - 238ms
+    server: 45.86.51.18
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (32) - 305ms
+    server: 167.88.63.99
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (34) - 289ms
+    server: 185.215.132.9
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (35) - 236ms
+    server: 172.111.38.72
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇨🇦_加拿大 (3) - 258ms
+    server: 134.195.198.163
+    port: 443
+    udp: true
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: PmCqK98WqhSC
+  - name: 🇨🇦_加拿大 (4) - 305ms
+    server: 184.107.106.78
+    port: 8388
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: itzvpn@321
+  - name: 🇨🇦_加拿大 (5) - 253ms
+    server: 158.51.121.221
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (36) - 316ms
+    server: 38.22.17.139
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (37) - 312ms
+    server: 38.121.43.18
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (38) - 328ms
+    server: 193.151.160.9
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (40) - 300ms
+    server: 38.22.17.214
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (41) - 326ms
+    server: 193.151.160.18
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇨🇦_加拿大 (6) - 313ms
+    server: 51.222.12.127
+    port: 445
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+  - name: 🇺🇸_美国 (43) - 276ms
+    server: 135.148.42.13
+    port: 8388
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: itzvpn@321
+  - name: 🇺🇸_美国 (48) - 334ms
+    server: 38.91.107.57
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (49) - 328ms
+    server: 169.197.140.247
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (50) - 275ms
+    server: 15.204.247.206
+    port: 4444
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 🇺🇸_美国 (51) - 298ms
+    server: 40.160.86.43
+    port: 8388
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: itzvpn@321
+  - name: 🇺🇸_美国 (54) - 309ms
+    server: 15.204.246.107
+    port: 8888
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇺🇸_美国 (55) - 57ms
+    server: 137.184.89.151
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (56) - 208ms
+    server: 38.91.100.39
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇺🇸_美国 (57) - 207ms
+    server: 193.151.163.18
+    port: 19999
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🇨🇦_加拿大 (10) - 259ms
+    server: 51.222.141.125
+    port: 445
+    udp: true
+    type: ss
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+  - name: 🇺🇸_美国 (59) - 71ms
+    server: 132.226.77.186
+    port: 50356
+    udp: true
+    type: ss
+    cipher: 2022-blake3-chacha20-poly1305
+    password: YG3nrWleyOJy8hUVHF1Nc8vOY0JgKdiT4n627Bj32+8=
+  - name: 🇺🇸_美国 (60) - 69ms
+    server: 161.153.38.61
+    port: 50356
+    udp: true
+    type: ss
+    cipher: 2022-blake3-chacha20-poly1305
+    password: EP/0kIjk18c43tfkqeJqdVQm8lGArteYkhhwgBJ3q70=
+  - name: 美国+V2CROSS.COM - 231ms
     server: starlink-ft.251313.xyz
     port: 443
     udp: true
     type: hysteria2
-    password: https://xship.top
+    password: https://xship.2fa.cat
     sni: xship.top
     skip-cert-verify: true
-  - name: CA【高速节点：https://tt.vg/vip】19 - 117ms
+  - name: US【高速节点：https://vip.a3f.xyz】26 - 118ms
+    server: 188.114.99.137
+    port: 443
+    udp: true
+    type: vmess
+    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /hls/cctv5phd.m3u8
+      headers:
+        Host: guanwang.awsno.com
+  - name: CA【高速节点：https://vip.a3f.xyz】27 - 112ms
     server: 104.18.42.163
     port: 443
     udp: true
@@ -461,7 +651,7 @@ proxies:
       path: /hls/cctv5phd.m3u8
       headers:
         Host: guanwang.awsno.com
-  - name: CA【高速节点：https://tt.vg/vip】28 - 122ms
+  - name: CA【高速节点：https://vip.a3f.xyz】29 - 103ms
     server: 172.64.145.93
     port: 443
     udp: true
@@ -476,7 +666,7 @@ proxies:
       path: /hls/cctv5phd.m3u8
       headers:
         Host: guanwang.awsno.com
-  - name: CA【高速节点：https://tt.vg/vip】29 - 143ms
+  - name: CA【高速节点：https://vip.a3f.xyz】30 - 111ms
     server: 172.67.190.164
     port: 443
     udp: true
@@ -495,67 +685,87 @@ proxy-groups:
   - name: Auto Select
     type: url-test
     proxies:
-      - SG VLESS-11 | free-nodes - 99ms
-      - US VMESS-13 | free-nodes - 132ms
-      - 🇯🇵_日本 (4) - 323ms
-      - 🇯🇵_日本 (5) - 325ms
-      - 🇯🇵_日本 (6) - 341ms
-      - 🇯🇵_日本 (9) - 322ms
-      - 🇯🇵_日本 (12) - 326ms
-      - 🇺🇸_美国 (9) - 36ms
-      - 🇺🇸_美国 (10) - 94ms
-      - 🇺🇸_美国 (11) - 79ms
-      - 🇺🇸_美国 (12) - 45ms
-      - 🇨🇦_加拿大 - 90ms
-      - 🇺🇸_美国 (19) - 84ms
-      - 🇺🇸_美国 (22) - 137ms
-      - 🇺🇸_美国 (24) - 142ms
-      - 🇺🇸_美国 (27) - 204ms
-      - 🇺🇸_美国 (33) - 132ms
-      - 🇺🇸_美国 (34) - 143ms
-      - 🇺🇸_美国 (35) - 219ms
-      - 🇺🇸_美国 (38) - 196ms
-      - 🇺🇸_美国 (39) - 228ms
-      - 🇺🇸_美国 (40) - 140ms
-      - 🇺🇸_美国 (42) - 217ms
-      - 🇺🇸_美国 (43) - 249ms
-      - 🇺🇸_美国 (45) - 170ms
-      - 🇺🇸_美国 (46) - 221ms
-      - 🇺🇸_美国 (47) - 182ms
-      - 🇺🇸_美国 (49) - 171ms
-      - 🇺🇸_美国 (54) - 204ms
-      - 🇺🇸_美国 (56) - 219ms
-      - 🇺🇸_美国 (57) - 299ms
-      - 🇺🇸_美国 (58) - 310ms
-      - 🇺🇸_美国 (59) - 308ms
-      - 🇺🇸_美国 (61) - 301ms
-      - 🇺🇸_美国 (63) - 271ms
-      - 🇺🇸_美国 (64) - 295ms
-      - 🇺🇸_美国 (66) - 243ms
-      - 🇺🇸_美国 (67) - 252ms
-      - 🇺🇸_美国 (69) - 239ms
-      - 🇺🇸_美国 (70) - 319ms
-      - 🇺🇸_美国 (71) - 311ms
-      - 🇺🇸_美国 (72) - 269ms
-      - 🇺🇸_美国 (73) - 327ms
-      - 🇺🇸_美国 (74) - 308ms
-      - 🇨🇦_加拿大 (3) - 250ms
-      - 🇺🇸_美国 (75) - 301ms
-      - 🇺🇸_美国 (80) - 331ms
-      - 🇺🇸_美国 (81) - 329ms
-      - 🇺🇸_美国 (84) - 227ms
-      - 🇺🇸_美国 (85) - 345ms
-      - 🇺🇸_美国 (86) - 296ms
-      - 🇺🇸_美国 (89) - 230ms
-      - 🇺🇸_美国 (13) - 245ms
-      - 🇺🇸_美国 (14) - 235ms
-      - 🇺🇸_美国 (16) - 40ms
-      - 🇺🇸_美国 (60) - 242ms
-      - 🇺🇸_美国 (21) - 141ms
-      - 🇺🇸 美国 | USA 2 - 185ms
-      - CA【高速节点：https://tt.vg/vip】19 - 117ms
-      - CA【高速节点：https://tt.vg/vip】28 - 122ms
-      - CA【高速节点：https://tt.vg/vip】29 - 143ms
+      - SG VLESS-11 | free-nodes - 95ms
+      - US VMESS-13 | free-nodes - 119ms
+      - 🇺🇸_美国 (176) - 119ms
+      - 🇯🇵_日本 (10) - 349ms
+      - 🇺🇸_美国 (78) - 88ms
+      - 🇭🇰_香港 (9) - 43ms
+      - 🇺🇸_美国 (81) - 280ms
+      - 🇺🇸_美国 (83) - 32ms
+      - 🇺🇸_美国 (88) - 37ms
+      - 🇺🇸_美国 (90) - 63ms
+      - 🇺🇸_美国 (91) - 221ms
+      - 🇺🇸_美国 (92) - 40ms
+      - 🇺🇸_美国 (94) - 41ms
+      - 🇺🇸_美国 (113) - 210ms
+      - 🇨🇦_加拿大 (13) - 214ms
+      - 🇨🇦_加拿大 (17) - 206ms
+      - 🇺🇸_美国 (120) - 277ms
+      - 🇺🇸_美国 (122) - 179ms
+      - 🇺🇸_美国 (124) - 241ms
+      - 🇯🇵_日本 - 343ms
+      - 🇯🇵_日本 (2) - 322ms
+      - 🇯🇵_日本 (3) - 324ms
+      - 🇯🇵_日本 (4) - 325ms
+      - 🇯🇵_日本 (5) - 323ms
+      - 🇺🇸_美国 - 78ms
+      - 🇺🇸_美国 (2) - 27ms
+      - 🇺🇸_美国 (3) - 77ms
+      - 🇺🇸_美国 (4) - 82ms
+      - 🇺🇸_美国 (5) - 66ms
+      - 🇺🇸_美国 (6) - 41ms
+      - 🇨🇦_加拿大 - 95ms
+      - 🇺🇸_美国 (7) - 131ms
+      - 🇺🇸_美国 (8) - 144ms
+      - 🇺🇸_美国 (10) - 216ms
+      - 🇺🇸_美国 (11) - 176ms
+      - 🇺🇸_美国 (12) - 178ms
+      - 🇺🇸_美国 (13) - 139ms
+      - 🇺🇸_美国 (14) - 179ms
+      - 🇺🇸_美国 (15) - 216ms
+      - 🇺🇸_美国 (16) - 206ms
+      - 🇺🇸_美国 (17) - 226ms
+      - 🇺🇸_美国 (19) - 228ms
+      - 🇺🇸_美国 (20) - 171ms
+      - 🇺🇸_美国 (21) - 210ms
+      - 🇺🇸_美国 (23) - 168ms
+      - 🇺🇸_美国 (24) - 318ms
+      - 🇺🇸_美国 (25) - 171ms
+      - 🇺🇸_美国 (27) - 314ms
+      - 🇺🇸_美国 (28) - 123ms
+      - 🇺🇸_美国 (29) - 128ms
+      - 🇺🇸_美国 (30) - 246ms
+      - 🇺🇸_美国 (31) - 238ms
+      - 🇺🇸_美国 (32) - 305ms
+      - 🇺🇸_美国 (34) - 289ms
+      - 🇺🇸_美国 (35) - 236ms
+      - 🇨🇦_加拿大 (3) - 258ms
+      - 🇨🇦_加拿大 (4) - 305ms
+      - 🇨🇦_加拿大 (5) - 253ms
+      - 🇺🇸_美国 (36) - 316ms
+      - 🇺🇸_美国 (37) - 312ms
+      - 🇺🇸_美国 (38) - 328ms
+      - 🇺🇸_美国 (40) - 300ms
+      - 🇺🇸_美国 (41) - 326ms
+      - 🇨🇦_加拿大 (6) - 313ms
+      - 🇺🇸_美国 (43) - 276ms
+      - 🇺🇸_美国 (48) - 334ms
+      - 🇺🇸_美国 (49) - 328ms
+      - 🇺🇸_美国 (50) - 275ms
+      - 🇺🇸_美国 (51) - 298ms
+      - 🇺🇸_美国 (54) - 309ms
+      - 🇺🇸_美国 (55) - 57ms
+      - 🇺🇸_美国 (56) - 208ms
+      - 🇺🇸_美国 (57) - 207ms
+      - 🇨🇦_加拿大 (10) - 259ms
+      - 🇺🇸_美国 (59) - 71ms
+      - 🇺🇸_美国 (60) - 69ms
+      - 美国+V2CROSS.COM - 231ms
+      - US【高速节点：https://vip.a3f.xyz】26 - 118ms
+      - CA【高速节点：https://vip.a3f.xyz】27 - 112ms
+      - CA【高速节点：https://vip.a3f.xyz】29 - 103ms
+      - CA【高速节点：https://vip.a3f.xyz】30 - 111ms
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -563,66 +773,86 @@ proxy-groups:
     type: select
     proxies:
       - Auto Select
-      - SG VLESS-11 | free-nodes - 99ms
-      - US VMESS-13 | free-nodes - 132ms
-      - 🇯🇵_日本 (4) - 323ms
-      - 🇯🇵_日本 (5) - 325ms
-      - 🇯🇵_日本 (6) - 341ms
-      - 🇯🇵_日本 (9) - 322ms
-      - 🇯🇵_日本 (12) - 326ms
-      - 🇺🇸_美国 (9) - 36ms
-      - 🇺🇸_美国 (10) - 94ms
-      - 🇺🇸_美国 (11) - 79ms
-      - 🇺🇸_美国 (12) - 45ms
-      - 🇨🇦_加拿大 - 90ms
-      - 🇺🇸_美国 (19) - 84ms
-      - 🇺🇸_美国 (22) - 137ms
-      - 🇺🇸_美国 (24) - 142ms
-      - 🇺🇸_美国 (27) - 204ms
-      - 🇺🇸_美国 (33) - 132ms
-      - 🇺🇸_美国 (34) - 143ms
-      - 🇺🇸_美国 (35) - 219ms
-      - 🇺🇸_美国 (38) - 196ms
-      - 🇺🇸_美国 (39) - 228ms
-      - 🇺🇸_美国 (40) - 140ms
-      - 🇺🇸_美国 (42) - 217ms
-      - 🇺🇸_美国 (43) - 249ms
-      - 🇺🇸_美国 (45) - 170ms
-      - 🇺🇸_美国 (46) - 221ms
-      - 🇺🇸_美国 (47) - 182ms
-      - 🇺🇸_美国 (49) - 171ms
-      - 🇺🇸_美国 (54) - 204ms
-      - 🇺🇸_美国 (56) - 219ms
-      - 🇺🇸_美国 (57) - 299ms
-      - 🇺🇸_美国 (58) - 310ms
-      - 🇺🇸_美国 (59) - 308ms
-      - 🇺🇸_美国 (61) - 301ms
-      - 🇺🇸_美国 (63) - 271ms
-      - 🇺🇸_美国 (64) - 295ms
-      - 🇺🇸_美国 (66) - 243ms
-      - 🇺🇸_美国 (67) - 252ms
-      - 🇺🇸_美国 (69) - 239ms
-      - 🇺🇸_美国 (70) - 319ms
-      - 🇺🇸_美国 (71) - 311ms
-      - 🇺🇸_美国 (72) - 269ms
-      - 🇺🇸_美国 (73) - 327ms
-      - 🇺🇸_美国 (74) - 308ms
-      - 🇨🇦_加拿大 (3) - 250ms
-      - 🇺🇸_美国 (75) - 301ms
-      - 🇺🇸_美国 (80) - 331ms
-      - 🇺🇸_美国 (81) - 329ms
-      - 🇺🇸_美国 (84) - 227ms
-      - 🇺🇸_美国 (85) - 345ms
-      - 🇺🇸_美国 (86) - 296ms
-      - 🇺🇸_美国 (89) - 230ms
-      - 🇺🇸_美国 (13) - 245ms
-      - 🇺🇸_美国 (14) - 235ms
-      - 🇺🇸_美国 (16) - 40ms
-      - 🇺🇸_美国 (60) - 242ms
-      - 🇺🇸_美国 (21) - 141ms
-      - 🇺🇸 美国 | USA 2 - 185ms
-      - CA【高速节点：https://tt.vg/vip】19 - 117ms
-      - CA【高速节点：https://tt.vg/vip】28 - 122ms
-      - CA【高速节点：https://tt.vg/vip】29 - 143ms
+      - SG VLESS-11 | free-nodes - 95ms
+      - US VMESS-13 | free-nodes - 119ms
+      - 🇺🇸_美国 (176) - 119ms
+      - 🇯🇵_日本 (10) - 349ms
+      - 🇺🇸_美国 (78) - 88ms
+      - 🇭🇰_香港 (9) - 43ms
+      - 🇺🇸_美国 (81) - 280ms
+      - 🇺🇸_美国 (83) - 32ms
+      - 🇺🇸_美国 (88) - 37ms
+      - 🇺🇸_美国 (90) - 63ms
+      - 🇺🇸_美国 (91) - 221ms
+      - 🇺🇸_美国 (92) - 40ms
+      - 🇺🇸_美国 (94) - 41ms
+      - 🇺🇸_美国 (113) - 210ms
+      - 🇨🇦_加拿大 (13) - 214ms
+      - 🇨🇦_加拿大 (17) - 206ms
+      - 🇺🇸_美国 (120) - 277ms
+      - 🇺🇸_美国 (122) - 179ms
+      - 🇺🇸_美国 (124) - 241ms
+      - 🇯🇵_日本 - 343ms
+      - 🇯🇵_日本 (2) - 322ms
+      - 🇯🇵_日本 (3) - 324ms
+      - 🇯🇵_日本 (4) - 325ms
+      - 🇯🇵_日本 (5) - 323ms
+      - 🇺🇸_美国 - 78ms
+      - 🇺🇸_美国 (2) - 27ms
+      - 🇺🇸_美国 (3) - 77ms
+      - 🇺🇸_美国 (4) - 82ms
+      - 🇺🇸_美国 (5) - 66ms
+      - 🇺🇸_美国 (6) - 41ms
+      - 🇨🇦_加拿大 - 95ms
+      - 🇺🇸_美国 (7) - 131ms
+      - 🇺🇸_美国 (8) - 144ms
+      - 🇺🇸_美国 (10) - 216ms
+      - 🇺🇸_美国 (11) - 176ms
+      - 🇺🇸_美国 (12) - 178ms
+      - 🇺🇸_美国 (13) - 139ms
+      - 🇺🇸_美国 (14) - 179ms
+      - 🇺🇸_美国 (15) - 216ms
+      - 🇺🇸_美国 (16) - 206ms
+      - 🇺🇸_美国 (17) - 226ms
+      - 🇺🇸_美国 (19) - 228ms
+      - 🇺🇸_美国 (20) - 171ms
+      - 🇺🇸_美国 (21) - 210ms
+      - 🇺🇸_美国 (23) - 168ms
+      - 🇺🇸_美国 (24) - 318ms
+      - 🇺🇸_美国 (25) - 171ms
+      - 🇺🇸_美国 (27) - 314ms
+      - 🇺🇸_美国 (28) - 123ms
+      - 🇺🇸_美国 (29) - 128ms
+      - 🇺🇸_美国 (30) - 246ms
+      - 🇺🇸_美国 (31) - 238ms
+      - 🇺🇸_美国 (32) - 305ms
+      - 🇺🇸_美国 (34) - 289ms
+      - 🇺🇸_美国 (35) - 236ms
+      - 🇨🇦_加拿大 (3) - 258ms
+      - 🇨🇦_加拿大 (4) - 305ms
+      - 🇨🇦_加拿大 (5) - 253ms
+      - 🇺🇸_美国 (36) - 316ms
+      - 🇺🇸_美国 (37) - 312ms
+      - 🇺🇸_美国 (38) - 328ms
+      - 🇺🇸_美国 (40) - 300ms
+      - 🇺🇸_美国 (41) - 326ms
+      - 🇨🇦_加拿大 (6) - 313ms
+      - 🇺🇸_美国 (43) - 276ms
+      - 🇺🇸_美国 (48) - 334ms
+      - 🇺🇸_美国 (49) - 328ms
+      - 🇺🇸_美国 (50) - 275ms
+      - 🇺🇸_美国 (51) - 298ms
+      - 🇺🇸_美国 (54) - 309ms
+      - 🇺🇸_美国 (55) - 57ms
+      - 🇺🇸_美国 (56) - 208ms
+      - 🇺🇸_美国 (57) - 207ms
+      - 🇨🇦_加拿大 (10) - 259ms
+      - 🇺🇸_美国 (59) - 71ms
+      - 🇺🇸_美国 (60) - 69ms
+      - 美国+V2CROSS.COM - 231ms
+      - US【高速节点：https://vip.a3f.xyz】26 - 118ms
+      - CA【高速节点：https://vip.a3f.xyz】27 - 112ms
+      - CA【高速节点：https://vip.a3f.xyz】29 - 103ms
+      - CA【高速节点：https://vip.a3f.xyz】30 - 111ms
 rules:
   - MATCH,Proxy
